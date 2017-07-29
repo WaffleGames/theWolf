@@ -10,6 +10,11 @@
       <sprite>sprites\playtemp</sprite>
       <sprite>sprites\creditstemp</sprite>
     </sprites>
+    <sprites name="ui">
+      <sprite>sprites\ui_arrow_left</sprite>
+      <sprite>sprites\ui_arrow_right</sprite>
+      <sprite>sprites\inventory</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\theWall</background>
