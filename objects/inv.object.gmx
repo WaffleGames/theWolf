@@ -8,6 +8,70 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// set timer, fill up bar, and count it down!
+
+globalvar time_left;
+time_left = 15;
+
+//alarm will countdown for 848 seconds
+alarm[0] = room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//draw_sprite_stretched(tick, -1, 88, 681, time_left, 10);
+
+show_debug_message("Whats up???!");
+
+time_left -=1; 
+alarm[0] = room_speed;
+
+if(time_left == 0){
+
+show_debug_message("Time's up!");
+alarm[0] = -1;
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -28,6 +92,15 @@
             <string>/// Draw the sprite into the gui
 
 display_set_gui_size(1024, 700);
+
+
+
+draw_sprite(backbar, -1, 87, 680);
+
+draw_sprite_stretched(tick, -1, 88, 681, time_left, 10);
+object_set_depth(tick, -1000);
+
+
 </string>
           </argument>
         </arguments>
