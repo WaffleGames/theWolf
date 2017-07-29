@@ -19,10 +19,17 @@
     </sprites>
     <sprites name="first_room_sprites">
       <sprite>sprites\meat_photo</sprite>
+      <sprite>sprites\closed_crack</sprite>
+      <sprite>sprites\open_crack</sprite>
+      <sprite>sprites\knife_photo</sprite>
+      <sprite>sprites\crackInWall</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\theWall</background>
+    <background>background\Wall2</background>
+    <background>background\Wall3</background>
+    <background>background\Wall4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -48,6 +55,8 @@
     <object>objects\obj_text</object>
     <objects name="first_room_spriteObjs">
       <object>objects\meat_obj</object>
+      <object>objects\knife_obj</object>
+      <object>objects\crackInWall_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -56,15 +56,13 @@ alarm[0] = room_speed;
             <kind>1</kind>
             <string>//draw_sprite_stretched(tick, -1, 88, 681, time_left, 10);
 
-show_debug_message("Whats up???!");
-
 time_left -=1; 
 alarm[0] = room_speed;
 
 if(time_left == 0){
 
-show_debug_message("Time's up!");
-alarm[0] = -1;
+    show_debug_message("Time's up!");
+    alarm[0] = -1;
 
 }
 </string>
