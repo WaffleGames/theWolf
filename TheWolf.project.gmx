@@ -29,6 +29,11 @@
       <object>objects\obj_credits</object>
     </objects>
     <object>objects\transitionFade</object>
+    <objects name="gui">
+      <object>objects\go_left</object>
+      <object>objects\go_right</object>
+      <object>objects\inv</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
