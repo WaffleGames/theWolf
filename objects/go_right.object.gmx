@@ -27,9 +27,17 @@
             <kind>1</kind>
             <string>/// Move to 'right' scene
 
+if (currentRoom == first){
 // get current scene
-if room == firstRoom{
-    room_goto(firstRoom_B); //change when more rooms
+    if (room == firstRoom){
+        room_goto(firstRoom_D);
+    }else if (room == firstRoom_D){
+        room_goto(firstRoom_C);
+    }else if (room == firstRoom_C){
+        room_goto(firstRoom_B);
+    }else if (room == firstRoom_B){
+        room_goto(firstRoom);
+    }
 }
 </string>
           </argument>

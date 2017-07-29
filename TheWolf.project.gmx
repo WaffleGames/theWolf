@@ -54,6 +54,8 @@
     <room>rooms\mainMenu</room>
     <room>rooms\firstRoom</room>
     <room>rooms\firstRoom_B</room>
+    <room>rooms\firstRoom_C</room>
+    <room>rooms\firstRoom_D</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -8,6 +8,34 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>globalvar first, second, currentRoom;
+
+first = 1;
+second = 2;
+
+currentRoom = first;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
@@ -27,9 +55,18 @@
             <kind>1</kind>
             <string>/// Move to 'left' scene
 
+
+if (currentRoom == first){
 // get current scene
-if room == firstRoom{
-    room_goto(firstRoom_B);
+    if (room == firstRoom){
+        room_goto(firstRoom_B);
+    }else if (room == firstRoom_B){
+        room_goto(firstRoom_C);
+    }else if (room == firstRoom_C){
+        room_goto(firstRoom_D);
+    }else if (room == firstRoom_D){
+        room_goto(firstRoom);
+    }
 }
 </string>
           </argument>
