@@ -11,7 +11,9 @@
       <sprite>sprites\creditstemp</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\theWall</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\buttonHover.gml</script>
