@@ -22,7 +22,11 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\buttonHover.gml</script>
+    <script>scripts\showText.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font1</font>
+  </fonts>
   <objects name="objects">
     <objects name="mainMenu">
       <object>objects\obj_play</object>
@@ -34,6 +38,7 @@
       <object>objects\go_right</object>
       <object>objects\inv</object>
     </objects>
+    <object>objects\obj_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
