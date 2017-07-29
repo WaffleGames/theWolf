@@ -5,9 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="main_menu">
+      <sprite>sprites\playtemp</sprite>
+      <sprite>sprites\creditstemp</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\buttonHover.gml</script>
+  </scripts>
+  <objects name="objects">
+    <objects name="mainMenu">
+      <object>objects\obj_play</object>
+      <object>objects\obj_credits</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\mainMenu</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
