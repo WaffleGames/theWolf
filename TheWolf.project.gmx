@@ -23,6 +23,7 @@
       <object>objects\obj_play</object>
       <object>objects\obj_credits</object>
     </objects>
+    <object>objects\transitionFade</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
