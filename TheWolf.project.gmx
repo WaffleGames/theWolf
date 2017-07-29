@@ -38,6 +38,7 @@
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
     <room>rooms\firstRoom</room>
+    <room>rooms\firstRoom_B</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
