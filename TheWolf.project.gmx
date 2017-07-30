@@ -4,7 +4,16 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="first_room">
+      <sound>sound\lockedDoor</sound>
+      <sound>sound\doorCreak</sound>
+      <sound>sound\clothRip</sound>
+      <sound>sound\paperRip</sound>
+      <sound>sound\crash</sound>
+      <sound>sound\glass</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="main_menu">
       <sprite>sprites\playtemp</sprite>
