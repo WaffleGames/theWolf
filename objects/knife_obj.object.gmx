@@ -100,9 +100,14 @@ clicks += 1;
 
 if(clicks == 3){
     //falls down
+    //temp code
+    wat = instance_create(512, 600, temp_obj);
+      
+    
 }else if(clicks == 2){
     //wiggle big left
     image_angle = -15;
+
 }else if(clicks == 1){
     //wiggle right
     image_angle = 15;

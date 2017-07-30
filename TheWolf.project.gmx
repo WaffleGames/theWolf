@@ -23,6 +23,8 @@
       <sprite>sprites\open_crack</sprite>
       <sprite>sprites\knife_photo</sprite>
       <sprite>sprites\crackInWall</sprite>
+      <sprite>sprites\temp</sprite>
+      <sprite>sprites\door</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -57,6 +59,8 @@
       <object>objects\meat_obj</object>
       <object>objects\knife_obj</object>
       <object>objects\crackInWall_obj</object>
+      <object>objects\temp_obj</object>
+      <object>objects\door_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
