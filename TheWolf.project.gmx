@@ -25,6 +25,9 @@
       <sprite>sprites\crackInWall</sprite>
       <sprite>sprites\temp</sprite>
       <sprite>sprites\door</sprite>
+      <sprite>sprites\stool</sprite>
+      <sprite>sprites\fallen_knife_pic</sprite>
+      <sprite>sprites\fluff_spring</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -61,6 +64,10 @@
       <object>objects\crackInWall_obj</object>
       <object>objects\temp_obj</object>
       <object>objects\door_obj</object>
+      <object>objects\stool_obj</object>
+      <object>objects\empty_obj</object>
+      <object>objects\fallen_knife_obj</object>
+      <object>objects\fluff_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
