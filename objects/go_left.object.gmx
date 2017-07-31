@@ -8,34 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>globalvar first, second, currentRoom;
-
-first = 1;
-second = 2;
-
-currentRoom = first;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="6" enumb="11">
       <action>
         <libid>1</libid>
@@ -101,8 +73,7 @@ currentRoom = first;
             <kind>1</kind>
             <string>/// Move to 'left' scene
 
-
-if (currentRoom == first){
+if (global.currentRoom == 1){
 // get current scene
     if (room == firstRoom){
         room_goto(firstRoom_B);
@@ -113,6 +84,28 @@ if (currentRoom == first){
     }else if (room == firstRoom_D){
         room_goto(firstRoom);
     }
+}else if (global.currentRoom == 2){
+    if(room ==A_room1){
+        room_goto(A_room4);
+    }else if (room == A_room4){
+        room_goto(A_room3);
+    }else if (room == A_room3){
+        room_goto(A_room2);
+    }else if (room == A_room2){
+        room_goto(A_room1);
+    }
+
+}else if (global.currentRoom == 3){
+    if(room ==B_room1){
+        room_goto(B_room4);
+    }else if (room == B_room4){
+        room_goto(B_room3);
+    }else if (room == B_room3){
+        room_goto(B_room2);
+    }else if (room == B_room2){
+        room_goto(B_room1);
+    }
+
 }
 </string>
           </argument>

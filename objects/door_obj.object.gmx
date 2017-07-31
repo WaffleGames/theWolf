@@ -144,6 +144,10 @@ image_index =1;
             <kind>1</kind>
             <string>if(image_index==0){
     showText("It's locked...", 10,512,650);
+}else{
+    //go through the door to stairway
+    room_goto(stairway);
+    window_set_cursor(cr_default);
 }
 </string>
           </argument>

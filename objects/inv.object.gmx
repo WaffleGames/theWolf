@@ -94,8 +94,8 @@ display_set_gui_size(1024, 700);
 
 
 draw_sprite(backbar, -1, 87, 680);
-instance_create(0, 0, go_left);
-instance_create(1024, 0, go_right);
+//instance_create(0, 0, go_left);
+//instance_create(1024, 0, go_right);
 
 
 draw_sprite_stretched(tick, -1, 88, 681, time_left, 10);
