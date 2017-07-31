@@ -3,7 +3,6 @@
             for(i=0;i<global.arrayLen;i++){
                 if(global.invArray[i].id.item == -1){
                      global.invArray[i].id.item = global.inventoryContents[i];
-                     //global.item = -1;
                      in_inv = 1;
                      break;
                 }
