@@ -137,6 +137,7 @@
     <object>objects\obj_inventory_box</object>
     <object>objects\obj_item_parent</object>
     <object>objects\test</object>
+    <object>objects\childTest</object>
     <object>objects\obj_glow</object>
     <object>objects\obj_mouse_controller</object>
     <object>objects\stairs_obj</object>
@@ -169,7 +170,6 @@
     <object>objects\hallway_r_wall_obj</object>
     <object>objects\controller_obj</object>
     <object>objects\stairs_back_obj</object>
-    <object>objects\inInTest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>

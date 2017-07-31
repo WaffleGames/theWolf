@@ -12,5 +12,6 @@ if(global.item==-1){
                      break;
                 }
             }
+    script_execute(addToInv);
 }
-script_execute(addToInv);
+

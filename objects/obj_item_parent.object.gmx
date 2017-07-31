@@ -65,39 +65,41 @@ if(instance_place(x,y,obj_inventory_box)){
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//pick up this item from ground
-
-if(global.item==-1){
-    //global.item = object_index;
-    //instance_destroy();
-    //draw the object into the inventory box approriate
-    
-    for(i=0;i&lt;global.arrayLen;i++){
-                if(global.invArray[i].id.item == -1){
-                     action_move_to(100 + ((i*100)+100) + 32,32);
-                     global.inventoryContents[i] = id;
-                     show_debug_message("id:");
-                     show_debug_message(id);
-                     break;
-                }
-            }
-}
-script_execute(addToInv);
-</string>
+            <kind>9</kind>
+            <script>onLCitem1</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -145,39 +147,41 @@ script_execute(addToInv);
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>//get the inventory # of which item is currently being used by the player
-global.click_id = instance_place(mouse_x, mouse_y, obj_item_parent);
-show_debug_message("clicked");
-show_debug_message(global.click_id);
-if(global.click_id == noone){
-    show_debug_message("noone :C");
-}
-
-for(i=0;i&lt;global.arrayLen;i++){
-    show_debug_message(i);
-    if(global.inventoryContents[i] == global.click_id){
-        global.selected = i;
-        show_debug_message("SSSSS");
-        show_debug_message(global.selected);
-    }
-}
-
-script_execute(glowSprite);
-</string>
+            <kind>9</kind>
+            <script>onLCitem2</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
