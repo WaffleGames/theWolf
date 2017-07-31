@@ -14,3 +14,4 @@ Crash - https://freesound.org/people/zaneclampett/sounds/263620/
 Under the Attribution License(https://creativecommons.org/licenses/by/3.0/):  
 
 Glass Shattering - https://freesound.org/people/unfa/sounds/221528/
+Serene boy posing with plaid shirt - http://www.freepik.com/free-photo/serene-boy-posing-with-plaid-shirt_980648.htm

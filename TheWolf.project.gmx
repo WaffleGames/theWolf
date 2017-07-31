@@ -76,6 +76,8 @@
       <sprite>sprites\drill</sprite>
     </sprites>
     <sprite>sprites\empty_stairs_back</sprite>
+    <sprite>sprites\sprite49</sprite>
+    <sprite>sprites\sprite50</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\theWall</background>
@@ -94,6 +96,9 @@
     <script>scripts\addToInv.gml</script>
     <script>scripts\glowSprite.gml</script>
     <script>scripts\GUIbuttons.gml</script>
+    <script>scripts\onCreateItem.gml</script>
+    <script>scripts\onLCitem1.gml</script>
+    <script>scripts\onLCitem2.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -164,6 +169,7 @@
     <object>objects\hallway_r_wall_obj</object>
     <object>objects\controller_obj</object>
     <object>objects\stairs_back_obj</object>
+    <object>objects\inInTest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
