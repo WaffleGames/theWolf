@@ -37,7 +37,17 @@
       <sprite>sprites\stool</sprite>
       <sprite>sprites\fallen_knife_pic</sprite>
       <sprite>sprites\fluff_spring</sprite>
+      <sprite>sprites\dogbowlUnder</sprite>
+      <sprite>sprites\dogBowl</sprite>
+      <sprite>sprites\dogBowlSmall</sprite>
+      <sprite>sprites\keyBig</sprite>
+      <sprite>sprites\keyunderBowl</sprite>
     </sprites>
+    <sprite>sprites\inv_box</sprite>
+    <sprite>sprites\invBox</sprite>
+    <sprite>sprites\sprite19</sprite>
+    <sprite>sprites\glow</sprite>
+    <sprite>sprites\sprite26</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\theWall</background>
@@ -49,6 +59,9 @@
   <scripts name="scripts">
     <script>scripts\buttonHover.gml</script>
     <script>scripts\showText.gml</script>
+    <script>scripts\drawItem.gml</script>
+    <script>scripts\addToInv.gml</script>
+    <script>scripts\glowSprite.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -69,6 +82,8 @@
     <object>objects\obj_text</object>
     <objects name="first_room_spriteObjs">
       <object>objects\meat_obj</object>
+      <object>objects\smallDogBowl</object>
+      <object>objects\obj_bigKey</object>
       <object>objects\knife_obj</object>
       <object>objects\crackInWall_obj</object>
       <object>objects\temp_obj</object>
@@ -77,7 +92,16 @@
       <object>objects\empty_obj</object>
       <object>objects\fallen_knife_obj</object>
       <object>objects\fluff_obj</object>
+      <object>objects\obj_underDogBowl</object>
+      <object>objects\obj_dogBowlBig</object>
+      <object>objects\obj_keyUnder</object>
     </objects>
+    <object>objects\obj_game_controller</object>
+    <object>objects\obj_inventory_box</object>
+    <object>objects\obj_item_parent</object>
+    <object>objects\test</object>
+    <object>objects\obj_glow</object>
+    <object>objects\obj_mouse_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
@@ -85,6 +109,7 @@
     <room>rooms\firstRoom_B</room>
     <room>rooms\firstRoom_C</room>
     <room>rooms\firstRoom_D</room>
+    <room>rooms\dogBowlRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
