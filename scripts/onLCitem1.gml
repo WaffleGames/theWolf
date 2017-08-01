@@ -12,6 +12,19 @@ if(global.item==-1){
                      break;
                 }
             }
+    
+    //detect which item it is and remove it from the scene, alter global variables
+    my_object_name = object_get_name(id.object_index);
+    show_debug_message(my_object_name);
+    
+    switch (my_object_name){
+        case 'skull_obj':
+            global.haveSkull = 1;
+            show_debug_message("got this one");
+            break;
+    }
+    
+    
     script_execute(addToInv);
 }
 

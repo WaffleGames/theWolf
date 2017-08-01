@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-20</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -28,19 +28,19 @@
             <string>// create item variables
 global.item = -1;
 
-//create several inv boxes in a row as an array
-
+//length of the array
 global.arrayLen = 6; //max size
-var my_inst;
+
 global.selected = -1; //which item is selected
 
-space = 100;
-for(i=0;i&lt;global.arrayLen;i++){
-    my_inst = instance_create(100 + space, 0, obj_inventory_box);
-    global.invArray[i] = my_inst; //array of inventory objects
-    global.inventoryContents[i] = -1; //whats in each slot
-    space = space + 100;
-}
+//var my_inst;
+//space = 100;
+//for(i=0;i&lt;global.arrayLen;i++){
+//    my_inst = instance_create(100 + space, 0, obj_inventory_box);
+//    global.invArray[i] = my_inst; //array of inventory objects
+//    global.inventoryContents[i] = -1; //whats in each slot
+//    space = space + 100;
+//}
 </string>
           </argument>
         </arguments>

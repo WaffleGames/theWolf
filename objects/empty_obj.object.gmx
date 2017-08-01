@@ -26,12 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>stool_guy = instance_create(704, 454, stool_obj);
-stool_guy.image_index = 1;
+stool_guy.visible = true;
 
 fluff = instance_create(580, 354, fluff_obj);
-fluff.image_index = 4;
 fluff.depth = -1;
-fluff.visible = false;
 </string>
           </argument>
         </arguments>

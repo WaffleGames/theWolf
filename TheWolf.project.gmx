@@ -13,6 +13,18 @@
       <sound>sound\crash</sound>
       <sound>sound\glass</sound>
     </sounds>
+    <sounds name="hallway">
+      <sound>sound\stairs_up</sound>
+      <sound>sound\button</sound>
+    </sounds>
+    <sounds name="room_B_sounds">
+      <sound>sound\plant_death</sound>
+    </sounds>
+    <sounds name="room_A_sounds">
+      <sound>sound\desk_slide</sound>
+      <sound>sound\cut_bars</sound>
+    </sounds>
+    <sound>sound\ambience_all</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="main_menu">
@@ -42,6 +54,8 @@
       <sprite>sprites\dogBowlSmall</sprite>
       <sprite>sprites\keyBig</sprite>
       <sprite>sprites\keyunderBowl</sprite>
+      <sprite>sprites\glass_item</sprite>
+      <sprite>sprites\skull</sprite>
     </sprites>
     <sprite>sprites\inv_box</sprite>
     <sprite>sprites\invBox</sprite>
@@ -99,6 +113,7 @@
     <script>scripts\onCreateItem.gml</script>
     <script>scripts\onLCitem1.gml</script>
     <script>scripts\onLCitem2.gml</script>
+    <script>scripts\inv_boxes.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -132,6 +147,8 @@
       <object>objects\obj_underDogBowl</object>
       <object>objects\obj_dogBowlBig</object>
       <object>objects\obj_keyUnder</object>
+      <object>objects\glass_obj</object>
+      <object>objects\skull_obj</object>
     </objects>
     <object>objects\obj_game_controller</object>
     <object>objects\obj_inventory_box</object>
@@ -170,6 +187,7 @@
     <object>objects\hallway_r_wall_obj</object>
     <object>objects\controller_obj</object>
     <object>objects\stairs_back_obj</object>
+    <object>objects\item_controller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>

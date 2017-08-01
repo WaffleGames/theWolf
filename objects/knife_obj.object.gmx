@@ -25,9 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>clicks = 0;
-globalvar hasBeenClicked;
-hasBeenClicked = 0;
+            <string>if(global.donePictureFrame == 3){
+    clicks = 3;
+    wat = instance_create(336, 600, fallen_knife_obj);
+    visible = false;
+    if(global.haveGlass == 0){
+        glass_var = instance_create(506, 620, glass_obj);
+    }
+} else if(global.donePictureFrame == 2){
+    clicks = 2;
+    image_angle = -15;
+}else if (global.donePictureFrame == 1){
+    clicks = 1;
+    image_angle = 15;
+}else if(global.donePictureFrame == 0){
+    clicks = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -73,8 +86,10 @@ hasBeenClicked = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!hasBeenClicked){
+            <string>if(!global.donePictureFrame == 3){
 window_set_cursor(cr_handpoint);
+}else{
+    window_set_cursor(cr_default);
 }
 </string>
           </argument>
@@ -106,18 +121,20 @@ if(clicks == 3){
     //falls down
     //temp code
     wat = instance_create(336, 600, fallen_knife_obj);
+    glass_var = instance_create(506, 620, glass_obj);
     visible = false;
-    hasBeenClicked = 1;
     window_set_cursor(cr_default);
-      
+    global.donePictureFrame = 3;  
     
 }else if(clicks == 2){
     //wiggle big left
     image_angle = -15;
+    global.donePictureFrame = 2;
 
 }else if(clicks == 1){
     //wiggle right
     image_angle = 15;
+    global.donePictureFrame = 1;
 }
 </string>
           </argument>

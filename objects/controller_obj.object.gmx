@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Will monitor global variables, etc
+            <string>/// Will monitor global variables, etc
 globalvar currentRoom, inFacingPuzzle;
 
 //tracks the current room youre in
@@ -35,16 +35,27 @@ global.currentRoom = 1;
 global.inFacingPuzzle = 0;
 
 
-globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper;
+globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;
+globalvar haveGlass, haveSkull;
 
-//doneStool and donePictureFrame will have multiple steps
+
+
+//making the array for the first time
+//for(i=0;i&lt;global.arrayLen;i++){
+//    global.inventoryContents[i] = -1; //whats in each slot
+//}
+
+//donePictureFrame has multiple steps
 
 global.doneDogBowl = 0;
 global.doneRoom1Door = 0;
 global.doneStool = 0;
+global.doneFluff = 0;
 global.donePictureFrame = 0;
 global.doneWallpaper = 0;
 
+global.haveGlass = 0;
+global.haveSkull = 0;
 
 </string>
           </argument>

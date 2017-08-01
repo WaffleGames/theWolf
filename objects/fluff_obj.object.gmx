@@ -25,11 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=0;
-image_index = 1;
+            <string>if(global.doneFluff == 0){
+    image_index = 0;
+    if(global.doneStool == 0){
+        visible = false;
+    }else{
+        visible = true;
+    }
+    
+}else if(global.doneFluff == 1){
+    image_index = 1;
+    if(global.doneStool == 1){
+        visible = true;
+    }
+}else if(global.doneFluff == 2){
+    visible = false;
+}
+image_speed = 0;
 clicks = 0;
-globalvar fluffClicks;
-fluffClicks = 0;
 </string>
           </argument>
         </arguments>
@@ -75,7 +88,7 @@ fluffClicks = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(fluffClicks &lt; 2){
+            <string>if(global.doneFluff &lt; 2){
     window_set_cursor(cr_handpoint);
 }
 </string>
@@ -100,18 +113,18 @@ fluffClicks = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if(fluffClicks &lt; 2){
-    if(clicks == 0){
-        image_index = 1;
-        clicks +=1;
-        fluffClicks +=1;
-    }else if (clicks ==1){
-        visible = false;
-        clicks +=1;
-        fluffClicks +=1;
-        window_set_cursor(cr_default);
+            <string>if(global.doneFluff == 0){
+    image_index = 1;
+    global.doneFluff = 1;
+    if(global.doneStool == 1){
+        visible = true;
     }
+}else if(global.doneFluff == 1){
+    global.doneFluff = 2;
+    if(global.doneStool == 1){
+        visible = false;
+    }
+    window_set_cursor(cr_default);
 }
 </string>
           </argument>
