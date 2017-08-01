@@ -71,7 +71,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(firstRoom_C);
+            <string>room_goto(firstRoom);
 
 window_set_cursor(cr_default);
 

@@ -35,6 +35,58 @@ if(global.doneWallpaper ==1){
         }
     }
 }
+
+if(global.doneStool == 1){
+    if(room == firstRoom_D){
+        my_fluff = instance_find(fluff_obj, 1);    
+        
+        if(global.doneFluff == 0){
+            my_fluff.image_index = 0;
+            if(global.doneStool == 0){
+                my_fluff.visible = false;
+            }else{
+                my_fluff.visible = true;
+            }
+        
+        }else if(global.doneFluff == 1){
+            my_fluff.image_index = 1;
+            if(global.doneStool == 1){
+                my_fluff.visible = true;
+            }
+        }else if(global.doneFluff == 2){
+            my_fluff.visible = false;
+        }
+    my_fluff.image_speed = 0;
+    my_fluff.clicks = 0;
+    }
+}else{
+    //still unchopped stool - do not show fluff
+    if(room == firstRoom_D){
+        my_fluff = instance_find(fluff_obj, 1);
+        my_fluff.image_speed = 0;
+        my_fluff.image_index = 1;
+        my_fluff.clicks = 0;
+        my_fluff.visible = false;
+        }
+}
+
+/*
+if(global.doneStool == 1){
+    if(global.doneFluff == 0){
+        image_index = 1;
+        global.doneFluff = 1;
+        if(global.doneStool == 1){
+            visible = true;
+        }
+    }else if(global.doneFluff == 1){
+        global.doneFluff = 2;
+        if(global.doneStool == 1){
+            //parent took over this code!
+        }
+        window_set_cursor(cr_default);
+    }
+}
+*/
 </string>
           </argument>
         </arguments>

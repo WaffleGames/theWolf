@@ -36,7 +36,7 @@ global.inFacingPuzzle = 0;
 
 
 globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;
-globalvar haveGlass, haveSkull;
+globalvar haveGlass, haveSkull, liftedDogBowl;
 
 global.selected = -1; // index number i of the selected item
 global.item = -1; // id of the selected item
@@ -63,7 +63,7 @@ global.doneWallpaper = 0;
 
 global.haveGlass = 0;
 global.haveSkull = 0;
-
+global.liftedDogBowl = 0;
 </string>
           </argument>
         </arguments>

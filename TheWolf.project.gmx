@@ -59,6 +59,7 @@
       <sprite>sprites\keyunderBowl</sprite>
       <sprite>sprites\glass_item</sprite>
       <sprite>sprites\skull</sprite>
+      <sprite>sprites\backFromDB</sprite>
     </sprites>
     <sprite>sprites\inv_box</sprite>
     <sprite>sprites\invBox</sprite>
@@ -95,6 +96,7 @@
     <sprite>sprites\empty_stairs_back</sprite>
     <sprite>sprites\sprite49</sprite>
     <sprite>sprites\sprite50</sprite>
+    <sprite>sprites\theWolf</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\theWall</background>
@@ -120,6 +122,7 @@
     <script>scripts\inv_boxes.gml</script>
     <script>scripts\drawInv.gml</script>
     <script>scripts\pers.gml</script>
+    <script>scripts\removeItem.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -142,7 +145,6 @@
     <objects name="first_room_spriteObjs">
       <object>objects\meat_obj</object>
       <object>objects\smallDogBowl</object>
-      <object>objects\obj_bigKey</object>
       <object>objects\knife_obj</object>
       <object>objects\crackInWall_obj</object>
       <object>objects\temp_obj</object>
@@ -156,13 +158,14 @@
       <object>objects\obj_keyUnder</object>
       <object>objects\glass_obj</object>
       <object>objects\skull_obj</object>
+      <object>objects\back_dogbowl_clicker</object>
     </objects>
     <object>objects\obj_game_controller</object>
     <object>objects\obj_inventory_box</object>
     <object>objects\obj_item_parent</object>
+    <object>objects\obj_glow</object>
     <object>objects\test</object>
     <object>objects\childTest</object>
-    <object>objects\obj_glow</object>
     <object>objects\obj_mouse_controller</object>
     <object>objects\stairs_obj</object>
     <objects name="hallway_objs">

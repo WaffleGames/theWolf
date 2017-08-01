@@ -21,7 +21,15 @@ if(global.item==-1){
     switch (my_object_name){
         case 'skull_obj':
             global.haveSkull = 1;
-            show_debug_message("got this one");
+            break;
+        case 'obj_keyUnder':
+            global.doneDogBowl = 1;
+            break;
+        case 'glass_obj':
+            global.haveGlass = 1;
+            break;
+        case 'fluff_obj':
+            global.doneFluff = 1;
             break;
     }
     

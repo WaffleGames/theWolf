@@ -3,7 +3,7 @@
   <spriteName>stool</spriteName>
   <solid>0</solid>
   <visible>0</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -106,15 +106,23 @@ window_set_cursor(cr_default);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if(global.doneStool == 0){
-image_index =0;
-global.doneStool = 1;
+            <string>if('glass_obj' == object_get_name(global.item.object_index)){
+    //used glass on the stool
+    if(global.doneStool == 0){
+    image_index =0;
+    global.doneStool = 1;
 
-fluffy = instance_find(fluff_obj, 0);
-fluffy.visible = true;
-audio_play_sound(clothRip, 10, false);
-window_set_cursor(cr_default);
+    fluffy = instance_find(fluff_obj, 0);
+    fluffy.visible = true;
+    fluffy.depth = -20;
+    audio_play_sound(clothRip, 10, false);
+    window_set_cursor(cr_default);
+    script_execute(removeItem);
+    }
+    
+
+}else{
+    //put text hint or something
 }
 </string>
           </argument>
