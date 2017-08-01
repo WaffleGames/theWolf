@@ -52,6 +52,9 @@ for(i=0;i&lt;global.arrayLen;i++){
 
 globalvar invArray;
 
+//controls the wolf jumpscare
+global.wolfAppear = 0;
+
 //donePictureFrame has multiple steps
 
 global.doneDogBowl = 0;

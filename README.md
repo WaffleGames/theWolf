@@ -10,6 +10,8 @@ Paper Ripping - https://freesound.org/people/ryanharding95/sounds/272453/
 Cloth Ripping - https://freesound.org/people/FrogPrince79/sounds/172625/
 Locked Door - https://freesound.org/people/Benagain/sounds/321087/
 Crash - https://freesound.org/people/zaneclampett/sounds/263620/
+jumpscare1 - https://freesound.org/people/DarkMime/sounds/381780/
+jumpscare 2 - https://freesound.org/people/DarkMime/sounds/380785/
 
 Under the Attribution License(https://creativecommons.org/licenses/by/3.0/):  
 

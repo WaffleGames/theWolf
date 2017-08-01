@@ -63,6 +63,17 @@ if(time_left == 0){
 
     show_debug_message("Time's up!");
     alarm[0] = -1;
+    room_goto(scaryRoom);
+    global.wolfAppear = 1;
+    inventoryBox = instance_find(inv,1);
+    //items = object_find(obj_item_parent,all);
+    inventoryBox.persistent = false;
+    for (i = 0; i &lt; instance_number(obj_item_parent); i++){
+       tmp = instance_find(obj_item_parent,i);
+       tmp.persistent = false;
+   }
+    audio_stop_sound(ambience_all);
+
 
 }
 </string>
@@ -88,20 +99,21 @@ if(time_left == 0){
           <argument>
             <kind>1</kind>
             <string>/// Draw the sprite into the gui
+if(room != scaryRoom){
+//dont draw any gui in the jumpscare room
+    display_set_gui_size(1024, 700);
+    
+    
+    
+    draw_sprite(backbar, -1, 87, 680);
+    //instance_create(0, 0, go_left);
+    //instance_create(1024, 0, go_right);
+    
+    
+    draw_sprite_stretched(tick, -1, 88, 681, time_left, 10);
+    object_set_depth(tick, -1000);
 
-display_set_gui_size(1024, 700);
-
-
-
-draw_sprite(backbar, -1, 87, 680);
-//instance_create(0, 0, go_left);
-//instance_create(1024, 0, go_right);
-
-
-draw_sprite_stretched(tick, -1, 88, 681, time_left, 10);
-object_set_depth(tick, -1000);
-
-
+}
 </string>
           </argument>
         </arguments>
