@@ -31,6 +31,9 @@ if(global.item==-1){
         case 'fluff_obj':
             global.doneFluff = 1;
             break;
+        case 'desk_brick_obj': //may need to alter after or add conditions to pick up actual brick
+            global.haveBrick = 1;
+            break;
     }
     
     

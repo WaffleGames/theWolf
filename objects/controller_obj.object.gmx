@@ -37,6 +37,10 @@ global.inFacingPuzzle = 0;
 
 globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;
 globalvar haveGlass, haveSkull, liftedDogBowl;
+globalvar doneDesk, doneBars, doneRoomACol, doneRoomAGreenCol;
+globalvar haveBrick;
+globalvar doneHallwayBlueCol, doneHallwayCol, doneHallwayYellowCol;
+globalvar donePlant, doneRoomBCol, doneRoomBRedCol;
 
 global.selected = -1; // index number i of the selected item
 global.item = -1; // id of the selected item
@@ -67,6 +71,21 @@ global.doneWallpaper = 0;
 global.haveGlass = 0;
 global.haveSkull = 0;
 global.liftedDogBowl = 0;
+
+global.doneDesk = 0;
+global.doneBars = 0;
+global.doneRoomACol = 0;
+global.doneRoomAGreenCol = 0;
+
+global.haveBrick = 0;
+
+global.doneHallwayBlueCol = 0;
+global.doneHallwayCol = 0;
+global.doneHallwayYellowCol = 0;
+
+global.donePlant = 0;
+global.doneRoomBCol = 0;
+global.doneRoomBRedCol = 0;
 </string>
           </argument>
         </arguments>

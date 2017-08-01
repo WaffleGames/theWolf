@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="col_green" x="320" y="352" name="inst_3A401414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="norm_col_r" x="448" y="352" name="inst_528DDAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="norm_col_A" x="448" y="352" name="inst_528DDAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -81,10 +81,10 @@
     <sprites name="room_A_sprites">
       <sprite>sprites\desk</sprite>
       <sprite>sprites\brick</sprite>
-      <sprite>sprites\brick_desk</sprite>
       <sprite>sprites\barWindow</sprite>
       <sprite>sprites\green_col</sprite>
       <sprite>sprites\right_col</sprite>
+      <sprite>sprites\brick_in_desk</sprite>
     </sprites>
     <sprites name="room_B_sprites">
       <sprite>sprites\plant</sprite>
@@ -184,9 +184,11 @@
     <objects name="A_Room_objs">
       <object>objects\desk_obj</object>
       <object>objects\col_green</object>
-      <object>objects\norm_col_r</object>
+      <object>objects\norm_col_A</object>
       <object>objects\back_door_A</object>
       <object>objects\bar_window</object>
+      <object>objects\desk_brick_obj</object>
+      <object>objects\brick_obj</object>
     </objects>
     <objects name="B_Room_objs">
       <object>objects\plant_obj</object>

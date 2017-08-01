@@ -28,7 +28,7 @@
             <string>/// set timer, fill up bar, and count it down!
 
 globalvar time_left;
-time_left = 30;
+time_left = 848;
 
 //alarm will countdown for 848 seconds
 alarm[0] = room_speed;
