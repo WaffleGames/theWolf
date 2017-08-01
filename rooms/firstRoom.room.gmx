@@ -12,14 +12,19 @@
   <showcolour>-1</showcolour>
   <code>script_execute(GUIbuttons);
 
-script_execute(inv_boxes);
+
+script_execute(drawInv);
 
 for(i=0;i&lt;global.arrayLen;i++){
         show_debug_message(global.inventoryContents[i]);      
     }
     show_debug_message("-----------------------");
     
-    audio_play_sound(ambience_all, 1, true);</code>
+    audio_play_sound(ambience_all, 1, true);
+    
+for(i=0;i&lt;global.arrayLen;i++){
+
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -63,7 +68,7 @@ for(i=0;i&lt;global.arrayLen;i++){
     <instance objName="inv" x="512" y="74" name="inst_4D1F15E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="door_obj" x="360" y="126" name="inst_AA68D7CC" locked="0" code="" scaleX="0.879999995231628" scaleY="0.871794879436493" colour="4294967295" rotation="0"/>
     <instance objName="smallDogBowl" x="402" y="656" name="inst_8F8E9CD7" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
-    <instance objName="childTest" x="250" y="280" name="inst_EBDE2AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="childTest" x="224" y="80" name="inst_EBDE2AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="childTest" x="106" y="374" name="inst_9B32ADE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="childTest" x="308" y="450" name="inst_2D30CB49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

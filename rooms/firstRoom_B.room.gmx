@@ -18,8 +18,8 @@ theCrack = instance_find(crackInWall_obj, 1);
 theCrack.image_index = 1;
 }
 
-script_execute(inv_boxes);
-
+//script_execute(inv_boxes);
+script_execute(drawInv);
 
 for(i=0;i&lt;global.arrayLen;i++){
         show_debug_message(global.inventoryContents[i]);      

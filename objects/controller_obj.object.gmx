@@ -38,12 +38,19 @@ global.inFacingPuzzle = 0;
 globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;
 globalvar haveGlass, haveSkull;
 
+global.selected = -1; // index number i of the selected item
+global.item = -1; // id of the selected item
 
+//length of the array
+global.arrayLen = 6; //max size
 
 //making the array for the first time
-//for(i=0;i&lt;global.arrayLen;i++){
-//    global.inventoryContents[i] = -1; //whats in each slot
-//}
+for(i=0;i&lt;global.arrayLen;i++){
+    global.inventoryContents[i] = -1; //whats in each slot
+    global.nameArray[i] = "";
+}
+
+globalvar invArray;
 
 //donePictureFrame has multiple steps
 

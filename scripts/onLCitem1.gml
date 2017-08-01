@@ -9,6 +9,7 @@ if(global.item==-1){
                 if(global.invArray[i].id.item == -1){
                      action_move_to(100 + ((i*100)+100) + 32,32);
                      global.inventoryContents[i] = id;
+                     //global.nameArray[i] = object_get_name(id.object_index);
                      break;
                 }
             }

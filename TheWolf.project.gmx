@@ -114,6 +114,8 @@
     <script>scripts\onLCitem1.gml</script>
     <script>scripts\onLCitem2.gml</script>
     <script>scripts\inv_boxes.gml</script>
+    <script>scripts\drawInv.gml</script>
+    <script>scripts\pers.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>

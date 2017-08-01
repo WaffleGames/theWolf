@@ -26,12 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>// create item variables
-global.item = -1;
+//global.item = -1;
 
 //length of the array
-global.arrayLen = 6; //max size
+//global.arrayLen = 6; //max size
 
-global.selected = -1; //which item is selected
+//global.selected = -1; //which item is selected
 
 //var my_inst;
 //space = 100;

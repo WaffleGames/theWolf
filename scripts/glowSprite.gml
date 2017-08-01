@@ -8,7 +8,7 @@ show_debug_message(100 + ((global.selected*100)+100) + 32);
 
     //the first time u select something
         if(!instance_exists(obj_glow)){
-
+           
             instance_create(100 + ((global.selected*100)+100) + 32,32,obj_glow);
 
         } else{
