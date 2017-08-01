@@ -30,6 +30,9 @@
     <sprites name="main_menu">
       <sprite>sprites\playtemp</sprite>
       <sprite>sprites\creditstemp</sprite>
+      <sprite>sprites\play_button</sprite>
+      <sprite>sprites\credits_button</sprite>
+      <sprite>sprites\title</sprite>
     </sprites>
     <sprites name="ui">
       <sprite>sprites\ui_arrow_left</sprite>
@@ -101,6 +104,7 @@
     <background>background\hallway</background>
     <background>background\stairs</background>
     <background>background\upstairsWall</background>
+    <background>background\title_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -124,6 +128,7 @@
     <objects name="mainMenu">
       <object>objects\obj_play</object>
       <object>objects\obj_credits</object>
+      <object>objects\title_obj</object>
     </objects>
     <object>objects\transitionFade</object>
     <objects name="gui">
