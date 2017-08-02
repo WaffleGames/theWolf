@@ -2,6 +2,8 @@
 //global.click_id = instance_place(mouse_x, mouse_y, inInTest); //what if detect colliison w black box
 
 //if clicking on item currently selected, deselect it
+
+show_debug_message("In lcitem2. 5.");
 if(global.item == self){
     global.item = -1;
     global.selected = -1;
@@ -13,7 +15,6 @@ if(global.item == self){
         if(global.inventoryContents[i] == self){
             global.selected = i;
             show_debug_message("SSSSS");
-            show_debug_message(global.selected);
             global.item = self;
         }
     }

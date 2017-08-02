@@ -116,9 +116,23 @@ possibleItem = "";
     if(possibleItem != ""){
         
         global.hallwayCol1 = possibleItem;
-        show_debug_message(hallwayCol1);
-        show_debug_message("^^^^^^^");
     
+        //please work
+        if(global.hallwayCol1 == 'block_wood_obj'){
+            instance_create(420, 600, block_wood_obj);
+            global.placementFlagHallwayCol1 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol1 == 'skull_obj'){
+            instance_create(420, 600, skull_obj);
+            global.placementFlagHallwayCol1 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol1 == 'brick_obj'){
+            instance_create(420, 600, brick_obj);
+            global.placementFlagHallwayCol1 = 1;
+            script_execute(removeItem);
+        }
+        
+        
         image_index = 1;
         audio_play_sound(button, 10, false);
         global.doneHallwayBlueCol = 1;
@@ -130,184 +144,6 @@ possibleItem = "";
     
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>possibleItem</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>'block_wood_obj'</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>block_wood_obj</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>show_debug_message("Hello?");
-action_move_to(420, 600); 
-
-show_debug_message(x);
-show_debug_message("UMMMM");
-
-global.item = -1;
-global.inventoryContents[global.selected] = -1;
-global.invArray[global.selected].id.item = -1;
-global.selected = -1;
-in_inv = 0;
-persistent = false;
-
-script_execute(glowSprite);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>possibleItem</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>'brick_obj'</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>brick_obj</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>action_move_to(420, 600); 
-
-global.item = -1;
-global.inventoryContents[global.selected] = -1;
-global.invArray[global.selected].id.item = -1;
-global.selected = -1;
-in_inv = 0;
-persistent = false;
-
-script_execute(glowSprite);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>possibleItem</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>'skull_obj'</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>skull_obj</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>action_move_to(420, 600); 
-
-global.item = -1;
-global.inventoryContents[global.selected] = -1;
-global.invArray[global.selected].id.item = -1;
-global.selected = -1;
-in_inv = 0;
-persistent = false;
-
-script_execute(glowSprite);
 </string>
           </argument>
         </arguments>

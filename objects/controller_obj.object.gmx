@@ -32,7 +32,6 @@ globalvar currentRoom, closeToPipe;
 global.currentRoom = 1;
 global.closeToPipe = 0;
 
-
 globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;
 globalvar haveGlass, haveSkull, liftedDogBowl;
 globalvar doneDesk, doneBars, doneRoomACol, doneRoomAGreenCol;
@@ -100,6 +99,12 @@ global.roomACol2 = 0;
 
 global.roomBCol1 = 0;
 global.roomBCol2 = 0;
+
+//important for knowing if something is on top of the col or if it has been removed
+globalvar placementFlagHallwayCol1, placementFlagHallwayCol2, placementFlagHallwayCol3;
+global.placementFlagHallwayCol1 = 0;
+global.placementFlagHallwayCol2 = 0;
+global.placementFlagHallwayCol3 = 0;
 </string>
           </argument>
         </arguments>

@@ -28,9 +28,72 @@
             <string>
 
 in_inv = 0;
-if(instance_place(x,y,obj_inventory_box)){
-    in_inv = 1;
+//if(instance_place(x,y,obj_inventory_box)){
+//    in_inv = 1;
+//}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*
+if(global.hallwayCol1 != 0 and global.hallwayCol1 != "" and global.placementFlagHallwayCol1 == 0){
+    if(room == facingPuzzle){
+        //first col, blue one
+        if(global.hallwayCol1 == 'block_wood_obj'){
+            instance_create(420, 600, block_wood_obj);
+            global.placementFlagHallwayCol1 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol1 == 'skull_obj'){
+            instance_create(420, 600, skull_obj);
+            global.placementFlagHallwayCol1 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol1 == 'brick_obj'){
+            instance_create(420, 600, brick_obj);
+            global.placementFlagHallwayCol1 = 1;
+            script_execute(removeItem);
+        }
+        
+    }
 }
+
+if(global.hallwayCol2 != 0 and global.hallwayCol2 != "" and global.placementFlagHallwayCol2 == 0){
+    if(room == facingPuzzle){
+        //middle col
+        if(global.hallwayCol2 == 'block_wood_obj'){
+            instance_create(512, 600, block_wood_obj);
+            global.placementFlagHallwayCol2 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol2 == 'skull_obj'){
+            instance_create(512, 600, skull_obj);
+            global.placementFlagHallwayCol2 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol2 == 'brick_obj'){
+            instance_create(512, 600, brick_obj);
+            global.placementFlagHallwayCol2 = 1;
+            script_execute(removeItem);
+        }
+    }
+
+}
+*/
 </string>
           </argument>
         </arguments>

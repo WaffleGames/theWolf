@@ -1,6 +1,3 @@
-show_debug_message("selected:");
-show_debug_message(global.selected);
-show_debug_message(100 + ((global.selected*100)+100) + 32);
 //for reference:
 //global.selected is the index number of the glowing item
 //global.item is the id of the selected item
