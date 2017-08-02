@@ -40,3 +40,13 @@ if(global.item==-1){
     script_execute(addToInv);
 }
 
+
+///check the room and if ur in it, move the col to up position
+//if(global.hallwayCol1 != "" or global.hallwayCol1 != 0){
+if(room == facingPuzzle){
+        global.hallwayCol1 = "";
+        blue_col_obj = instance_find(col_blue, 1);
+        blue_col_obj.image_index = 0;
+        global.doneHallwayBlueCol = 0;
+    }
+//}

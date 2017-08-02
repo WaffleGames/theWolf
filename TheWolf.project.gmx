@@ -134,6 +134,7 @@
     <script>scripts\drawInv.gml</script>
     <script>scripts\pers.gml</script>
     <script>scripts\removeItem.gml</script>
+    <script>scripts\putItemOnCol.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>

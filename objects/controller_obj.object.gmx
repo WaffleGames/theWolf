@@ -84,6 +84,22 @@ global.doneHallwayYellowCol = 0;
 global.donePlant = 0;
 global.doneRoomBCol = 0;
 global.doneRoomBRedCol = 0;
+
+
+//these are the global variables for the columns
+//they store what item is currently on top of them
+globalvar hallwayCol1, hallwayCol2, hallwayCol3;
+globalvar roomACol1, roomACol2, roomBCol1, roomBCol2; 
+
+global.hallwayCol1 = 0;
+global.hallwayCol2 = 0;
+global.hallwayCol3 = 0;
+
+global.roomACol1 = 0;
+global.roomACol2 = 0;
+
+global.roomBCol1 = 0;
+global.roomBCol2 = 0;
 </string>
           </argument>
         </arguments>
