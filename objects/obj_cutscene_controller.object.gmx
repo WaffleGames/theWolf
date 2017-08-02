@@ -27,10 +27,14 @@
             <kind>1</kind>
             <string>//controls each cutscene
 
-if(room == cutscene1){
+//if(room == cutscene1){
 showTexts = 1; //time between messages
 texts = 0;
 alarm[6] = room_speed; //countdown
+//}
+if(room == endingCredits){
+//play THE SONG
+
 }
 </string>
           </argument>
@@ -56,40 +60,73 @@ alarm[6] = room_speed; //countdown
             <kind>1</kind>
             <string>showTexts -=1; 
 alarm[6] = room_speed;
-
-if(showTexts == 0){
-   switch(texts){  
-    case 0:
-        showText("I've been kidnapped...",2,512,350);
-        texts++;
-        showTexts =3;
-        break;
-    case 1:
-        showText("The wolf has captured me.",2,512,350);
-        texts++;
-        showTexts =3;
-        break;
-    case 2:
-        showText("...",2,512,350);
-        texts++;
-        showTexts =3;
-        break;
-    case 3:
-        showText("Where am I?",2,512,350);
-        texts++;
-        showTexts =3;
-        break;
-    case 4:
-        showText("I have to escape.",2,512,350);
-        texts++;
-        showTexts =3;
-        break;
-    case 5:
-        instance_create(0,0,transitionFade);
-        break;   
-    default:
-        break;
+if(room == cutscene1){
+    
+    if(showTexts == 0){
+       switch(texts){  
+        case 0:
+            showText("I've been kidnapped...",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 1:
+            showText("The wolf has captured me.",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 2:
+            showText("...",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 3:
+            showText("Where am I?",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 4:
+            showText("I have to escape.",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 5:
+            showText("I need to hurry. Before the wolf comes.",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 6:
+            instance_create(0,0,transitionFade);
+            break;   
+        default:
+            break;
+        }
     }
+}
+if(room == endingCredits){
+
+    //first, ending cutscene -- unskippable
+    //then roll the credits
+    if(showTexts == 0){
+       switch(texts){  
+        case 0:
+            showText("I made it.",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 1:
+            showText("-Congratulations-",2,512,350);
+            texts++;
+            showTexts =3;
+            break;
+        case 2:
+            showText("Put the credits in this switch case o:",2,512,350);
+            room_goto(mainMenu);
+            break;
+        default:
+            break;
+        }
+    }
+
 }
 </string>
           </argument>
@@ -113,7 +150,7 @@ if(showTexts == 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_check_button_pressed(mb_left){
+            <string>if (mouse_check_button_pressed(mb_left) &amp;&amp; room == cutscene1){
    instance_create(0,0,transitionFade);
 }
 </string>

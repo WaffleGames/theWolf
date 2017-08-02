@@ -244,6 +244,7 @@
     <room>rooms\pipe_far</room>
     <room>rooms\close_on_pipe</room>
     <room>rooms\wolfWall</room>
+    <room>rooms\endingCredits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

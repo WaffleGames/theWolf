@@ -122,7 +122,9 @@ window_set_cursor(cr_default);
     
 
 }else{
-    //put text hint or something
+    if(global.doneStool == 1){
+        showText("It has seen better days.", 10,512,650);
+    } else showText("A springy stool.", 10,512,650);
 }
 </string>
           </argument>
