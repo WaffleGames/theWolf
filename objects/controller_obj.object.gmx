@@ -102,9 +102,19 @@ global.roomBCol2 = 0;
 
 //important for knowing if something is on top of the col or if it has been removed
 globalvar placementFlagHallwayCol1, placementFlagHallwayCol2, placementFlagHallwayCol3;
+globalvar placementFlagRoomACol1, placementFlagRoomACol2;
+globalvar placementFlagRoomBCol1, placementFlagRoomBCol2;
+
+
 global.placementFlagHallwayCol1 = 0;
 global.placementFlagHallwayCol2 = 0;
 global.placementFlagHallwayCol3 = 0;
+
+global.placementFlagRoomACol1 = 0;
+global.placementFlagRoomACol2 = 0;
+
+global.placementFlagRoomBCol1 = 0;
+global.placementFlagRoomBCol2 = 0;
 </string>
           </argument>
         </arguments>

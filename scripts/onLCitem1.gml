@@ -44,7 +44,7 @@ if(global.item==-1){
 
 
 ///check the room and if ur in it, move the col to up position
-//if(global.hallwayCol1 != "" or global.hallwayCol1 != 0){
+
 if(room == facingPuzzle){
         if(global.hallwayCol1 == object_get_name(id.object_index) ){
             blue_col_obj = instance_find(col_blue, 1);
@@ -63,5 +63,28 @@ if(room == facingPuzzle){
             global.doneHallwayYellowCol = 0;
         }
         
-    }
-//}
+}else if(room == A_room2){
+        if(global.roomACol1 == object_get_name(id.object_index) ){
+            green_col_obj = instance_find(col_green, 1);
+            global.roomACol1 = "";
+            green_col_obj.image_index = 0;
+            global.doneRoomAGreenCol = 0;
+        }else if(global.roomACol2 == object_get_name(id.object_index) ){
+            right_col_obj = instance_find(norm_col_A, 1);
+            global.roomACol2 = "";
+            right_col_obj.image_index = 0;
+            global.doneRoomACol = 0;
+        }     
+}else if(room == B_room4){
+        if(global.roomBCol1 == object_get_name(id.object_index) ){
+            l_col_obj = instance_find(left_col_obj, 1);
+            global.roomBCol1 = "";
+            l_col_obj.image_index = 0;
+            global.doneRoomBCol = 0;
+        }else if(global.roomBCol2 == object_get_name(id.object_index) ){
+            red_column_obj = instance_find(red_col_obj, 1);
+            global.roomBCol2 = "";
+            red_column_obj.image_index = 0;
+            global.doneRoomBRedCol = 0;
+        }  
+}

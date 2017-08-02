@@ -29,8 +29,17 @@
     image_index = 0;
 }else{
     image_index = 1;
+
+    if(global.roomBCol2 == 'skull_obj'){
+        instance_create(590, 580, skull_obj);
+    }else if(global.roomBCol2 == 'brick_obj'){
+        instance_create(590, 580, brick_obj);
+    }else if(global.roomBCol2 == 'block_wood_obj'){
+        instance_create(590, 580, block_wood_obj);
+    }
 }
 image_speed =0;
+possibleItem = "";
 </string>
           </argument>
         </arguments>
@@ -100,12 +109,57 @@ image_speed =0;
           <argument>
             <kind>1</kind>
             <string>if(global.doneRoomBRedCol == 0){
-    image_index = 1;
     
-    audio_play_sound(button, 10, false);
-    global.doneRoomBRedCol = 1;
-}else{
+    possibleItem = "";
+    possibleItem = script_execute(putItemOnCol);
+    
+    if(possibleItem != ""){
+        
+        global.roomBCol2 = possibleItem;
+    
+        //please work
+        if(global.roomBCol2 == 'block_wood_obj'){
+            instance_create(590, 580, block_wood_obj);
+            global.placementFlagRoomBCol2 = 1;
+            script_execute(removeItem);
+        }else if(global.roomBCol2 == 'skull_obj'){
+            instance_create(590, 580, skull_obj);
+            global.placementFlagRoomBCol2 = 1;
+            script_execute(removeItem);
+        }else if(global.roomBCol2 == 'brick_obj'){
+            instance_create(590, 580, brick_obj);
+            global.placementFlagRoomBCol2 = 1;
+            script_execute(removeItem);
+        }
+        
+        
+        image_index = 1;
+        audio_play_sound(button, 10, false);
+        global.doneRoomBRedCol = 1;
+    
+    }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>possibleItem = "";
 </string>
           </argument>
         </arguments>

@@ -15,8 +15,21 @@ if(room == facingPuzzle){
         global.placementFlagHallwayCol1 = 0;
     }else if(global.hallwayCol2 != "" and global.hallwayCol2 != 0 ){
         global.placementFlagHallwayCol2 = 0;
+    }else if(global.hallwayCol3 != "" and global.hallwayCol3 != 0 ){
+        global.placementFlagHallwayCol3 = 0;
     }
-    
-    
-    
+}else if(room == A_room2){
+    if(global.roomACol1 != "" and global.roomACol1 != 0 ){
+        global.placementFlagRoomACol1 = 0;
+    }else if(global.roomACol2 != "" and global.roomACol2 != 0 ){
+        global.placementFlagRoomACol2 = 0;
+    }
+
+}else if(room == B_room4){
+    if(global.roomBCol1 != "" and global.roomBCol1 != 0 ){
+        global.placementFlagRoomBCol1 = 0;
+    }else if(global.roomBCol2 != "" and global.roomBCol2 != 0 ){
+        global.placementFlagRoomBCol2 = 0;
+    }
+
 }

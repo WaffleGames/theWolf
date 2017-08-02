@@ -29,8 +29,18 @@
     image_index = 0;
 }else{
     image_index = 1;
+    
+    if(global.hallwayCol3 == 'skull_obj'){
+        instance_create(620, 600, skull_obj);
+    }else if(global.hallwayCol3 == 'brick_obj'){
+        instance_create(620, 600, brick_obj);
+    }else if(global.hallwayCol3 == 'block_wood_obj'){
+        instance_create(620, 600, block_wood_obj);
+    }
+    
 }
 image_speed = 0;
+possibleItem = "";
 </string>
           </argument>
         </arguments>
@@ -100,12 +110,58 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>if(global.doneHallwayYellowCol == 0){
-    image_index = 1;
+
+    possibleItem = "";
+    possibleItem = script_execute(putItemOnCol);
+
+    if(possibleItem != ""){
+        
+        global.hallwayCol3 = possibleItem;
     
-    audio_play_sound(button, 10, false);
-    global.doneHallwayYellowCol = 1;
+        //please work
+        if(global.hallwayCol3 == 'block_wood_obj'){
+            instance_create(620, 600, block_wood_obj);
+            global.placementFlagHallwayCol3 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol3 == 'skull_obj'){
+            instance_create(620, 600, skull_obj);
+            global.placementFlagHallwayCol3 = 1;
+            script_execute(removeItem);
+        }else if(global.hallwayCol3 == 'brick_obj'){
+            instance_create(620, 600, brick_obj);
+            global.placementFlagHallwayCol3 = 1;
+            script_execute(removeItem);
+        }
+        
+        
+        image_index = 1;
+        audio_play_sound(button, 10, false);
+        global.doneHallwayYellowCol = 1;
+    }
+    
 }else{
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>possibleItem = "";
 </string>
           </argument>
         </arguments>

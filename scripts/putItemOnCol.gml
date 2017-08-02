@@ -8,9 +8,6 @@ if(global.selected != -1){
         
         return object_get_name(global.inventoryContents[global.selected].object_index);
         
-        
-        
-    
     
     }else{
         //not a valid item to weigh down the column
