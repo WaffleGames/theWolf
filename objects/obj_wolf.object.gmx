@@ -111,7 +111,6 @@ fade = 1; //controls if we're fading in or out
           <argument>
             <kind>1</kind>
             <string>returnToMain2 -=1; 
-show_debug_message(returnToMain2);
 alarm[5] = room_speed;
 if(returnToMain2 == 0){
     room_goto(mainMenu);
