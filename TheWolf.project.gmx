@@ -77,6 +77,10 @@
       <sprite>sprites\middle_col</sprite>
       <sprite>sprites\puzzle_frame</sprite>
       <sprite>sprites\down_stairs</sprite>
+      <sprite>sprites\wolfdoor</sprite>
+      <sprite>sprites\pipe_area</sprite>
+      <sprite>sprites\goto_close_pipe</sprite>
+      <sprite>sprites\valve_thing</sprite>
     </sprites>
     <sprites name="room_A_sprites">
       <sprite>sprites\desk</sprite>
@@ -111,6 +115,9 @@
     <background>background\stairs</background>
     <background>background\upstairsWall</background>
     <background>background\title_bg</background>
+    <background>background\dogbowl_bg</background>
+    <background>background\the_pipe</background>
+    <background>background\pipe_closeup</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -180,6 +187,10 @@
       <object>objects\col_yellow</object>
       <object>objects\puzzle</object>
       <object>objects\downStairs</object>
+      <object>objects\wolfs_door</object>
+      <object>objects\goto_pipeArea</object>
+      <object>objects\goto_close_pipe_obj</object>
+      <object>objects\valve_thing_obj</object>
     </objects>
     <objects name="A_Room_objs">
       <object>objects\desk_obj</object>
@@ -206,6 +217,7 @@
     <object>objects\item_controller</object>
     <object>objects\obj_wolf</object>
     <object>objects\obj_rectangle</object>
+    <object>objects\hallway_l_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
@@ -226,6 +238,9 @@
     <room>rooms\B_room3</room>
     <room>rooms\B_room4</room>
     <room>rooms\scaryRoom</room>
+    <room>rooms\pipe_far</room>
+    <room>rooms\close_on_pipe</room>
+    <room>rooms\wolfWall</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -26,13 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Will monitor global variables, etc
-globalvar currentRoom, inFacingPuzzle;
+globalvar currentRoom, closeToPipe;
 
 //tracks the current room youre in
 global.currentRoom = 1;
-
-//if youre in the room 'FacingPuzzle' - has a special right-only arrow
-global.inFacingPuzzle = 0;
+global.closeToPipe = 0;
 
 
 globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;

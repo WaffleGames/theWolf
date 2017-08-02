@@ -75,8 +75,6 @@
 
 global.currentRoom = 3;
 
-global.inFacingPuzzle = 0;
-
 window_set_cursor(cr_default);
 </string>
           </argument>

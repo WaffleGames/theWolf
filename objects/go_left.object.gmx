@@ -106,6 +106,15 @@ if (global.currentRoom == 1){
         room_goto(B_room1);
     }
 
+}else if (global.currentRoom == 4){
+    //hallway area
+    if(room == facingPuzzle){
+        room_goto(pipe_far)
+    }else if(room == pipe_far){
+        room_goto(wolfWall);
+    }else if(room == wolfWall){
+        room_goto(hall);
+    }
 }
 </string>
           </argument>

@@ -72,6 +72,7 @@
           <argument>
             <kind>1</kind>
             <string>room_goto(facingPuzzle);
+global.currentRoom = 4;
 window_set_cursor(cr_default);
 </string>
           </argument>
