@@ -27,6 +27,16 @@
     <sound>sound\ambience_all</sound>
     <sound>sound\jumpscare1</sound>
     <sound>sound\jumpscare2</sound>
+    <sounds name="wolfDoor_sounds">
+      <sound>sound\clatter1</sound>
+      <sound>sound\clatter2</sound>
+      <sound>sound\clatter3</sound>
+      <sound>sound\clatter4</sound>
+      <sound>sound\clatter5</sound>
+      <sound>sound\breathing</sound>
+      <sound>sound\growl1</sound>
+      <sound>sound\growl2</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="main_menu">
@@ -220,6 +230,7 @@
     <object>objects\obj_rectangle</object>
     <object>objects\hallway_l_obj</object>
     <object>objects\obj_cutscene_controller</object>
+    <object>objects\obj_wolfDoor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>
