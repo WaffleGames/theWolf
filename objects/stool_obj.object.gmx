@@ -109,15 +109,15 @@ window_set_cursor(cr_default);
             <string>if('glass_obj' == object_get_name(global.item.object_index)){
     //used glass on the stool
     if(global.doneStool == 0){
-    image_index =0;
-    global.doneStool = 1;
-
-    fluffy = instance_find(fluff_obj, 0);
-    fluffy.visible = true;
-    fluffy.depth = -20;
-    audio_play_sound(clothRip, 10, false);
-    window_set_cursor(cr_default);
-    script_execute(removeItem);
+        image_index =0;
+        global.doneStool = 1;
+    
+        fluffy = instance_find(fluff_obj, 0);
+        fluffy.visible = true;
+        fluffy.depth = -20;
+        audio_play_sound(clothRip, 10, false);
+        window_set_cursor(cr_default);
+        script_execute(removeItem);
     }
     
 

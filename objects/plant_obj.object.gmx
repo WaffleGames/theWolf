@@ -29,6 +29,10 @@
     image_index = 0;
 }else{
     image_index = 1;
+    if(global.haveBit == 0){
+         bitty = instance_create(460, 660, bit_obj);
+         bitty.image_angle = 15;
+    }
 }
 image_speed = 0;
 </string>
@@ -103,12 +107,26 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.donePlant == 0){
-    image_index =1;
-    audio_play_sound(plant_death, 10, false);
-    global.donePlant = 1;
-    window_set_cursor(cr_default);
-}else{
+            <string>if(object_get_name(global.item.object_index) == 'cup_obj'){
+
+    if(global.item.image_index = 1){
+
+        if(global.donePlant == 0){
+            image_index = 1;
+            audio_play_sound(plant_death, 10, false);
+            
+            if(global.haveBit == 0){
+                theBit = instance_create(460, 660, bit_obj);
+                theBit.image_angle = 15;
+            }
+            global.donePlant = 1;
+            window_set_cursor(cr_default);
+            script_execute(removeItem);
+        }
+    }
+}
+else{
+    show_debug_message("What kind of plant is that?");
 }
 </string>
           </argument>

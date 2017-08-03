@@ -41,7 +41,7 @@ global.filledUpCup = 0;
 globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;
 globalvar haveGlass, haveSkull, liftedDogBowl;
 globalvar doneDesk, doneBars, doneRoomACol, doneRoomAGreenCol;
-globalvar haveBrick;
+globalvar haveBrick, haveBit;
 globalvar doneHallwayBlueCol, doneHallwayCol, doneHallwayYellowCol;
 globalvar donePlant, doneRoomBCol, doneRoomBRedCol;
 
@@ -89,7 +89,7 @@ global.doneHallwayYellowCol = 0;
 global.donePlant = 0;
 global.doneRoomBCol = 0;
 global.doneRoomBRedCol = 0;
-
+global.haveBit = 0;
 
 //these are the global variables for the columns
 //they store what item is currently on top of them

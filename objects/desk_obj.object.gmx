@@ -106,18 +106,29 @@ image_speed =0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.doneDesk ==0){
-    image_index = 1;
+            <string>if(object_get_name(global.item.object_index) == 'obj_keyUnder'){
+    //opens the desk
     
-    if(global.haveBrick == 0){
-        //spawn brick in the drawer
-        drawer_brick = instance_create(300, 325, desk_brick_obj);
+    if(global.doneDesk ==0){
+        image_index = 1;
+        
+        if(global.haveBrick == 0){
+            //spawn brick in the drawer
+            drawer_brick = instance_create(300, 325, desk_brick_obj);
+        }
+        audio_play_sound(desk_slide, 10, false);
+        
+        window_set_cursor(cr_default);
+        global.doneDesk =1;
+        script_execute(removeItem);
     }
-    audio_play_sound(desk_slide, 10, false);
     
-    window_set_cursor(cr_default);
-    global.doneDesk =1;
+}else{
+    //make sure this message doesnt play after you click on the desk when it's unlocked!
+    show_debug_message("Looks like it's locked...");
 }
+
+
 </string>
           </argument>
         </arguments>

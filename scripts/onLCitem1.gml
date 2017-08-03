@@ -54,6 +54,9 @@ if(global.item==-1){
         case 'cup_obj':
             global.haveCup = 1;
             break;
+        case 'bit_obj':
+            global.haveBit = 1;
+            break;
         /*case 'desk_brick_obj': //may need to alter after or add conditions to pick up actual brick
             global.haveBrick = 1;
             break;*/

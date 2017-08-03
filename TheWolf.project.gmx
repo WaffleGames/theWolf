@@ -109,6 +109,7 @@
       <sprite>sprites\left_col</sprite>
       <sprite>sprites\window_sprite</sprite>
       <sprite>sprites\drill</sprite>
+      <sprite>sprites\bit_sprite</sprite>
     </sprites>
     <sprite>sprites\empty_stairs_back</sprite>
     <sprite>sprites\sprite49</sprite>
@@ -225,6 +226,7 @@
       <object>objects\left_col_obj</object>
       <object>objects\window_obj_bricks</object>
       <object>objects\screwdriver</object>
+      <object>objects\bit_obj</object>
     </objects>
     <object>objects\hallway_r_wall_obj</object>
     <object>objects\controller_obj</object>
