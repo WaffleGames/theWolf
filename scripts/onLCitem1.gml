@@ -5,7 +5,25 @@ if(global.item==-1){
     //global.item = object_index;
     //instance_destroy();
     //draw the object into the inventory box approriate
-    show_debug_message("Adding to inventory 2.");
+        show_debug_message("Adding to inventory 2.");
+    if(id.object_index == desk_brick_obj){
+        //if the item is the brick, switch it out
+        instance_destroy();
+        for(i=0;i<global.arrayLen;i++){
+                    if(global.invArray[i].id.item == -1){
+                        show_debug_message("Moved item into inventory. 3333.");
+                         new_brick = instance_create(100 + ((i*100)+100) + 32,32,brick_obj);
+                         global.inventoryContents[i] = new_brick;
+                         new_brick.in_inv = 1;
+                         new_brick.persistent = true;
+                         global.haveBrick = 1;
+                         break;
+                    }
+                }
+        script_execute(addToInv);
+    
+    } else{
+
     for(i=0;i<global.arrayLen;i++){
                 if(global.invArray[i].id.item == -1){
                     show_debug_message("Moved item into inventory. 3.");
@@ -15,10 +33,10 @@ if(global.item==-1){
                      break;
                 }
             }
-    
+   
     //detect which item it is and remove it from the scene, alter global variables
     my_object_name = object_get_name(id.object_index);
-    show_debug_message(my_object_name);
+    //show_debug_message(my_object_name);
     
     switch (my_object_name){
         case 'skull_obj':
@@ -33,13 +51,17 @@ if(global.item==-1){
         case 'fluff_obj':
             global.doneFluff = 1;
             break;
-        case 'desk_brick_obj': //may need to alter after or add conditions to pick up actual brick
-            global.haveBrick = 1;
+        case 'cup_obj':
+            global.haveCup = 1;
             break;
+        /*case 'desk_brick_obj': //may need to alter after or add conditions to pick up actual brick
+            global.haveBrick = 1;
+            break;*/
     }
     
     show_debug_message("Calling addtoInv from lcitem1. 4.");    
     script_execute(addToInv);
+    }
 }
 
 
@@ -87,4 +109,12 @@ if(room == facingPuzzle){
             red_column_obj.image_index = 0;
             global.doneRoomBRedCol = 0;
         }  
+}
+
+//reset the cup if you pick it up again at the pipe without filling it up
+if(room == pipe_far){
+    if(id.object_index == cup_obj){
+        global.putDownTheCup = 0;
+    
+    }
 }

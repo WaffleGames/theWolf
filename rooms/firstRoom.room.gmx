@@ -17,7 +17,9 @@ script_execute(drawInv);
 
 
     
-audio_play_sound(ambience_all, 10, true);</code>
+audio_play_sound(ambience_all, 10, true);
+
+script_execute(resetGlow);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

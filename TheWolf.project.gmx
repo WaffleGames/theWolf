@@ -91,6 +91,7 @@
       <sprite>sprites\pipe_area</sprite>
       <sprite>sprites\goto_close_pipe</sprite>
       <sprite>sprites\valve_thing</sprite>
+      <sprite>sprites\waterpipe_sprite</sprite>
     </sprites>
     <sprites name="room_A_sprites">
       <sprite>sprites\desk</sprite>
@@ -145,6 +146,7 @@
     <script>scripts\pers.gml</script>
     <script>scripts\removeItem.gml</script>
     <script>scripts\putItemOnCol.gml</script>
+    <script>scripts\resetGlow.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -202,6 +204,8 @@
       <object>objects\goto_pipeArea</object>
       <object>objects\goto_close_pipe_obj</object>
       <object>objects\valve_thing_obj</object>
+      <object>objects\cup_obj</object>
+      <object>objects\put_cup_here</object>
     </objects>
     <objects name="A_Room_objs">
       <object>objects\desk_obj</object>

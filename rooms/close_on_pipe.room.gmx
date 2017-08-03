@@ -12,7 +12,9 @@
   <showcolour>-1</showcolour>
   <code>global.closeToPipe = 1;
 
-instance_create(1024, 0, go_right);</code>
+instance_create(1024, 0, go_right);
+
+script_execute(resetGlow);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

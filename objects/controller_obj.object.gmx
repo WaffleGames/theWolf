@@ -32,6 +32,12 @@ globalvar currentRoom, closeToPipe;
 global.currentRoom = 1;
 global.closeToPipe = 0;
 
+globalvar cupDropped, haveCup, putDownTheCup, filledUpCup;
+global.cupDropped = 0;
+global.haveCup = 0;
+global.putDownTheCup = 0;
+global.filledUpCup = 0;
+
 globalvar doneDogBowl, doneRoom1Door, doneStool, donePictureFrame, doneWallpaper, doneFluff;
 globalvar haveGlass, haveSkull, liftedDogBowl;
 globalvar doneDesk, doneBars, doneRoomACol, doneRoomAGreenCol;
