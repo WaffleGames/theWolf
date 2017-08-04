@@ -29,6 +29,17 @@
     image_index = 1;
 }else if (global.doneStool == 1){
     image_index = 0;
+    
+    if(global.doneFluff == 0){
+        fluff = instance_create(670, 410, fluff_obj);
+        fluff.image_index = 0;
+        fluff.image_speed = 0;
+    }else if(global.doneFluff == 1){
+        fluff = instance_create(670, 410, fluff_obj);
+        fluff.image_index = 1;
+        fluff.image_speed = 0;
+    
+    }
 }
 
 image_speed=0;
@@ -79,11 +90,11 @@ image_speed=0;
           <argument>
             <kind>1</kind>
             <string>
-if(global.doneStool == 0){
+//if(global.doneStool == 0){
 window_set_cursor(cr_handpoint);
-}else {
-window_set_cursor(cr_default);
-}
+//}else {
+//window_set_cursor(cr_default);
+//}
 </string>
           </argument>
         </arguments>
@@ -112,9 +123,14 @@ window_set_cursor(cr_default);
         image_index =0;
         global.doneStool = 1;
     
-        fluffy = instance_find(fluff_obj, 0);
-        fluffy.visible = true;
-        fluffy.depth = -20;
+        //fluffy = instance_find(fluff_obj, 0);
+        //fluffy.visible = true;
+        //fluffy.depth = -20;
+        
+        fluff = instance_create(670, 410, fluff_obj);
+        fluff.image_index = 0;
+        fluff.image_speed = 0;
+        
         audio_play_sound(clothRip, 10, false);
         window_set_cursor(cr_default);
         script_execute(removeItem);
@@ -123,7 +139,7 @@ window_set_cursor(cr_default);
 
 }else{
     if(global.doneStool == 1){
-        //showText("It has seen better days.", 10,512,650);
+        showText("It has seen better days.", 10,512,650);
     } else showText("A springy stool.", 10,512,650);
 }
 </string>

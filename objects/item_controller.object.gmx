@@ -35,7 +35,7 @@ if(global.doneWallpaper ==1){
         }
     }
 }
-
+/*
 if(global.doneStool == 1){
     if(room == firstRoom_D){
         my_fluff = instance_find(fluff_obj, 1);    
@@ -69,7 +69,7 @@ if(global.doneStool == 1){
         my_fluff.visible = false;
         }
 }
-
+*/
 if(global.cupDropped == 1 and room == facingPuzzle and global.haveCup != 1){
     the_cup = instance_find(cup_obj, 1);
     the_cup.image_index = 0;

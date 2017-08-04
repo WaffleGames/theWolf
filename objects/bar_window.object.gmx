@@ -76,11 +76,11 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.doneBars == 0){
+            <string>//if(global.doneBars == 0){
     window_set_cursor(cr_handpoint);
-}else{
-    window_set_cursor(cr_default);
-}
+//}else{
+//    window_set_cursor(cr_default);
+//}
 </string>
           </argument>
         </arguments>

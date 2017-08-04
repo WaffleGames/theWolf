@@ -80,11 +80,11 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.donePlant == 0){
-    window_set_cursor(cr_handpoint);
-}else{
+            <string>//if(global.donePlant == 0){
+//    window_set_cursor(cr_handpoint);
+//}else{
     window_set_cursor(cr_default);
-}
+//}
 </string>
           </argument>
         </arguments>
@@ -128,6 +128,8 @@ image_speed = 0;
 else{
     if(donePlant != 1){
         showText("What kind of plant is that?", 10,512,650);
+    } else{
+        showText("It's dead...", 10,512,650);
     }
 }
 </string>

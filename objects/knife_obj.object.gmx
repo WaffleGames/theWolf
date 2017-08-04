@@ -30,7 +30,7 @@
     wat = instance_create(336, 600, fallen_knife_obj);
     visible = false;
     if(global.haveGlass == 0){
-        glass_var = instance_create(506, 620, glass_obj);
+        glass_var = instance_create(520, 635, glass_obj);
     }
 } else if(global.donePictureFrame == 2){
     clicks = 2;
@@ -121,7 +121,7 @@ if(clicks == 3){
     //falls down
     //temp code
     wat = instance_create(336, 600, fallen_knife_obj);
-    glass_var = instance_create(506, 620, glass_obj);
+    glass_var = instance_create(520, 635, glass_obj);
     visible = false;
     window_set_cursor(cr_default);
     global.donePictureFrame = 3;  

@@ -17,6 +17,7 @@
       <sound>sound\stairs_up</sound>
       <sound>sound\button</sound>
       <sound>sound\success</sound>
+      <sound>sound\squeaky_valve</sound>
     </sounds>
     <sounds name="room_B_sounds">
       <sound>sound\plant_death</sound>
@@ -103,6 +104,8 @@
       <sprite>sprites\green_col</sprite>
       <sprite>sprites\right_col</sprite>
       <sprite>sprites\brick_in_desk</sprite>
+      <sprite>sprites\delicious</sprite>
+      <sprite>sprites\table</sprite>
     </sprites>
     <sprites name="room_B_sprites">
       <sprite>sprites\plant</sprite>
@@ -219,6 +222,8 @@
       <object>objects\bar_window</object>
       <object>objects\desk_brick_obj</object>
       <object>objects\brick_obj</object>
+      <object>objects\poster_obj</object>
+      <object>objects\table_obj</object>
     </objects>
     <objects name="B_Room_objs">
       <object>objects\plant_obj</object>

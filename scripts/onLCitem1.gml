@@ -22,7 +22,12 @@ if(global.item==-1){
                 }
         script_execute(addToInv);
     
-    } else{
+    }else if(id.object_index == fluff_obj and id.image_index == 0){ 
+        //for the fluff, don't add it right away if its still floof
+        id.image_index = 1;
+        global.doneFluff =1;
+    
+    }else{
 
     for(i=0;i<global.arrayLen;i++){
                 if(global.invArray[i].id.item == -1){
@@ -49,8 +54,13 @@ if(global.item==-1){
             global.haveGlass = 1;
             break;
         case 'fluff_obj':
-            global.doneFluff = 1;
-            break;
+            if(id.image_index == 0){
+                global.doneFluff = 1;
+                break;
+            }else{
+                global.doneFluff = 2;
+                break;
+            }
         case 'cup_obj':
             global.haveCup = 1;
             break;
