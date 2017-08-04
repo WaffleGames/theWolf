@@ -16,6 +16,7 @@
     <sounds name="hallway">
       <sound>sound\stairs_up</sound>
       <sound>sound\button</sound>
+      <sound>sound\success</sound>
     </sounds>
     <sounds name="room_B_sounds">
       <sound>sound\plant_death</sound>
@@ -37,6 +38,8 @@
       <sound>sound\growl1</sound>
       <sound>sound\growl2</sound>
     </sounds>
+    <sound>sound\click</sound>
+    <sound>sound\wolfman</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="main_menu">

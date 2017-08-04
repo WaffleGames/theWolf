@@ -116,7 +116,7 @@ if(global.item !=-1){
             script_execute(removeItem);
             }    
 }else{
-    show_debug_message("It looks like it could drip something nasty...");
+    showText("It looks like it could drip something nasty...", 10,512,650);
 }
 </string>
           </argument>

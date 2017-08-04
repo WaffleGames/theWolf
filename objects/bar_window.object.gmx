@@ -119,7 +119,11 @@ image_speed = 0;
             }
     }
 }else{
-    //some text here saying something about cutting it
+    if(global.doneBars != 1){
+        showText("If I could break the bars, I could escape...", 10,512,650);
+    } else{
+        room_goto(endingCredits);
+    }
 }
 
 </string>

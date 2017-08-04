@@ -98,11 +98,11 @@
 
 if(global.putDownTheCup == 1){
     //fill it up with stuff
-    show_debug_message("The cup is filled with the nasty liquid!");
+    showText("The cup is filled with the nasty liquid.", 10,512,650);
     global.filledUpCup = 1;
     
 }else{
-    show_debug_message("Some nasty liquid spews out of the faucet. Better turn it off.");
+    showText("Some nasty liquid spews out of the faucet.", 10,512,650);
 }
 </string>
           </argument>

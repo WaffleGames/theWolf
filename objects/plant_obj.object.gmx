@@ -126,7 +126,9 @@ image_speed = 0;
     }
 }
 else{
-    show_debug_message("What kind of plant is that?");
+    if(donePlant != 1){
+        showText("What kind of plant is that?", 10,512,650);
+    }
 }
 </string>
           </argument>

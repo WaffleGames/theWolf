@@ -72,7 +72,7 @@
           <argument>
             <kind>1</kind>
             <string>///says something
-
+showText("Just a pile of boards.", 10,512,650);
 window_set_cursor(cr_default);
 </string>
           </argument>

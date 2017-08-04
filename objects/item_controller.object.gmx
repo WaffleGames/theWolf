@@ -81,8 +81,8 @@ if(global.roomBCol1 !="" and global.roomACol2 != "" and global.hallwayCol3 != ""
 and global.placementFlagHallwayCol3 == 1 and global.placementFlagRoomACol2 ==1 
 and global.placementFlagRoomBCol1 == 1 and global.cupDropped == 0){
     //the item is got!
-    audio_play_sound(jumpscare1, 10, false);
-    show_debug_message("You got the prize!");
+    audio_play_sound(success, 10, false);
+    showText("Something appeared in the hall.", 10,512,650);
     global.cupDropped = 1;
 }
 

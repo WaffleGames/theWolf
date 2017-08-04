@@ -85,12 +85,12 @@ if(room == cutscene1){
             showTexts =3;
             break;
         case 4:
-            showText("I have to escape.",2,512,350);
+            showText("I need to hurry. Before the wolf comes.",2,512,350);
             texts++;
             showTexts =3;
             break;
         case 5:
-            showText("I need to hurry. Before the wolf comes.",2,512,350);
+            showText("I have to escape.",2,512,350);
             texts++;
             showTexts =3;
             break;
