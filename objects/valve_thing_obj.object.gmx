@@ -105,7 +105,7 @@ if(global.putDownTheCup == 1){
     
 }else{
     showText("Some nasty liquid spews out of the faucet.", 10,512,650);
-    audio_play_sound(trickle, 10, false);
+    audio_play_sound(squeaky_valve, 10, false);
 }
 </string>
           </argument>
