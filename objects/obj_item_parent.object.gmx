@@ -99,6 +99,83 @@ if(global.hallwayCol2 != 0 and global.hallwayCol2 != "" and global.placementFlag
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//give info on the object if it is in the inventory
+
+    locX = x -32;
+    locY = y + 64;
+
+    tmp = object_get_name(self.object_index);
+    switch(tmp){
+    case "obj_keyUnder":
+    showText("A tiny key.",10,locX,locY);
+    break;
+    
+    case "fluff_obj":
+    showText("A twisty spring.",10,locX,locY);
+    break;
+    
+    case "glass_obj":
+    showText("A sharp, jagged piece of glass.",10,locX,locY);
+    break;
+    
+    case "skull_obj":
+    showText("A heavy skull.",10,locX,locY);
+    break;
+    
+    case "cup_obj":
+    if(image_index == 0){
+        showText("An empty cup.",10,locX,locY);
+    } else{
+        showText("A cup full of noxious liquid.",10,locX,locY);
+    }
+    break;
+    
+    case "brick_obj":
+    showText("A heavy brick.",10,locX,locY);
+    break;
+    
+    case "screwdriver":
+    if(image_index == 1){
+        showText("Part of a screwdriver.",10,locX,locY);
+    }else{
+        showText("A completed screwdriver.",10,locX,locY);
+    }
+    break;
+    
+    case "bit_obj":
+    showText("A bit for a screwdriver.",10,locX,locY);
+    break;
+    
+    case "block_wood_obj":
+    showText("A heavy piece of wood.",10,locX,locY);
+    break;
+    
+    default:
+    break;
+    }
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>

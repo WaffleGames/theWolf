@@ -100,10 +100,12 @@ if(global.putDownTheCup == 1){
     //fill it up with stuff
     showText("The cup is filled with the nasty liquid.", 10,512,650);
     audio_play_sound(squeaky_valve, 10, false);
+    audio_play_sound(trickle, 11, false);
     global.filledUpCup = 1;
     
 }else{
     showText("Some nasty liquid spews out of the faucet.", 10,512,650);
+    audio_play_sound(trickle, 10, false);
 }
 </string>
           </argument>

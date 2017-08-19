@@ -18,6 +18,7 @@
       <sound>sound\button</sound>
       <sound>sound\success</sound>
       <sound>sound\squeaky_valve</sound>
+      <sound>sound\trickle</sound>
     </sounds>
     <sounds name="room_B_sounds">
       <sound>sound\plant_death</sound>
