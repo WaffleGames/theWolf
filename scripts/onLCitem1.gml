@@ -12,7 +12,7 @@ if(global.item==-1){
         for(i=0;i<global.arrayLen;i++){
                     if(global.invArray[i].id.item == -1){
                         show_debug_message("Moved item into inventory. 3333.");
-                         new_brick = instance_create(100 + ((i*100)+100) + 32,32,brick_obj);
+                         new_brick = instance_create(100 + ((i*100)+100) + 32,42,brick_obj);
                          global.inventoryContents[i] = new_brick;
                          new_brick.in_inv = 1;
                          new_brick.persistent = true;
@@ -32,7 +32,7 @@ if(global.item==-1){
     for(i=0;i<global.arrayLen;i++){
                 if(global.invArray[i].id.item == -1){
                     show_debug_message("Moved item into inventory. 3.");
-                     action_move_to(100 + ((i*100)+100) + 32,32);
+                     action_move_to(100 + ((i*100)+100) + 32,42);
                      global.inventoryContents[i] = id;
                      //global.nameArray[i] = object_get_name(id.object_index);
                      break;
