@@ -35,6 +35,11 @@ alarm[6] = room_speed; //countdown
 if(room == endingCredits){
 //play THE SONG
 
+invbg = instance_find(inv,1);
+if(invbg &lt; 0){ //came here from credits menu button
+    texts = 2;
+} 
+
 }
 </string>
           </argument>
@@ -119,8 +124,9 @@ if(room == endingCredits){
             showTexts =3;
             break;
         case 2:
-            showText("Put the credits in this switch case o:",2,512,350);
-            room_goto(mainMenu);
+            //showText("Put the credits in this switch case o:",2,512,350);
+            //room_goto(mainMenu);
+            instance_create(512,350,scrollingCredits);
             break;
         default:
             break;
@@ -152,6 +158,10 @@ if(room == endingCredits){
             <kind>1</kind>
             <string>if (mouse_check_button_pressed(mb_left) &amp;&amp; room == cutscene1){
    instance_create(0,0,transitionFade);
+}
+
+if (room == endingCredits &amp;&amp; !audio_is_playing(wolfman)){
+   room_goto(mainMenu);
 }
 </string>
           </argument>

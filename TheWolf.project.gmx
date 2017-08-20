@@ -158,6 +158,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
+    <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
     <objects name="mainMenu">
@@ -246,6 +247,7 @@
     <object>objects\hallway_l_obj</object>
     <object>objects\obj_cutscene_controller</object>
     <object>objects\obj_wolfDoor</object>
+    <object>objects\scrollingCredits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainMenu</room>

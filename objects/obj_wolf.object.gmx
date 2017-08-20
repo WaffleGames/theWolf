@@ -28,17 +28,18 @@
             <string>image_xscale = 2;
 image_yscale = 2;
 
-//set timer to return to main menu
-returnToMain = 2;
-returnToMain2 = -1;
 
-//alarm will countdown
-alarm[4] = room_speed;
-alarm[5] = room_speed;
-
-//fading stuff
-a = 0;
-fade = 1; //controls if we're fading in or out
+    //set timer to return to main menu
+    returnToMain = 2;
+    returnToMain2 = -1;
+    
+    //alarm will countdown
+    alarm[4] = room_speed;
+    alarm[5] = room_speed;
+    
+    //fading stuff
+    a = 0;
+    fade = 1; //controls if we're fading in or out
 
 </string>
           </argument>
