@@ -118,7 +118,7 @@ if(global.hallwayCol2 != 0 and global.hallwayCol2 != "" and global.placementFlag
             <kind>1</kind>
             <string>//give info on the object if it is in the inventory
 
-    locX = x -32;
+    locX = x; //-12;
     locY = y + 64;
 
     tmp = object_get_name(self.object_index);
@@ -226,6 +226,16 @@ clicked = id.object_index;
 
 switch(clicked){
     case (obj_keyUnder):
+    image_xscale = image_xscale/2;
+    image_yscale = image_xscale;
+    break;
+    
+    case (block_wood_obj):
+    image_xscale = (image_xscale/2) - .1;
+    image_yscale = image_xscale;
+    break;
+    
+    case (screwdriver):
     image_xscale = image_xscale/2;
     image_yscale = image_xscale;
     break;

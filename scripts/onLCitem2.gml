@@ -26,8 +26,10 @@ if(global.item == self){
         //create the real one
         for(i=0;i<global.arrayLen;i++){
         if(global.inventoryContents[i] == -1){
-            newScrew = instance_create(100 + ((i*100)+100) + 32,32,screwdriver);
+            newScrew = instance_create(100 + ((i*100)+100) + 32,42,screwdriver);
             newScrew.image_index = 0;
+            newScrew.image_xscale = newScrew.image_xscale/2;
+            newScrew.image_yscale = newScrew.image_xscale;
             global.inventoryContents[i] = newScrew;
             global.invArray[i].id.item = newScrew;
             newScrew.in_inv = 1;

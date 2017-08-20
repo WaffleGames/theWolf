@@ -6,7 +6,7 @@
     //the first time u select something
         if(!instance_exists(obj_glow)){
            
-            instance_create(100 + ((global.selected*100)+100) + 32,32,obj_glow);
+            instance_create(100 + ((global.selected*100)+100) + 32,42,obj_glow);
 
         } else{
             //if something is already selected
