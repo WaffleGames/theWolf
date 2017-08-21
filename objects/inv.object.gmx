@@ -28,7 +28,7 @@
             <string>/// set timer, fill up bar, and count it down!
 
 globalvar time_left;
-time_left = 848;
+time_left = 35;//848;
 
 //alarm will countdown for 848 seconds
 alarm[0] = room_speed;
@@ -58,6 +58,12 @@ alarm[0] = room_speed;
 
 time_left -=1; 
 alarm[0] = room_speed;
+
+if(time_left == 30){
+    audio_stop_sound(ambience_all);
+    audio_play_sound(runningOut, 10, false);
+
+}
 
 if(time_left == 0){
 

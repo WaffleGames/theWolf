@@ -121,6 +121,14 @@ global.placementFlagRoomACol2 = 0;
 
 global.placementFlagRoomBCol1 = 0;
 global.placementFlagRoomBCol2 = 0;
+
+globalvar haveBox, haveScrewdriver;
+
+global.haveBox = 0;
+global.haveScrewdriver = 0;
+
+globalvar startBeginningMusic;
+global.startBeginningMusic = 0;
 </string>
           </argument>
         </arguments>

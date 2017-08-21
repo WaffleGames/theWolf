@@ -42,6 +42,7 @@
     </sounds>
     <sound>sound\click</sound>
     <sound>sound\wolfman</sound>
+    <sound>sound\runningOut</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="main_menu">

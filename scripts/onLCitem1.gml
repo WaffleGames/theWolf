@@ -67,9 +67,12 @@ if(global.item==-1){
         case 'bit_obj':
             global.haveBit = 1;
             break;
-        /*case 'desk_brick_obj': //may need to alter after or add conditions to pick up actual brick
-            global.haveBrick = 1;
-            break;*/
+        case 'block_wood_obj':
+            global.haveBox = 1;
+            break;
+        case 'screwdriver':
+            global.haveScrewdriver = 1;
+            break;
     }
     
     show_debug_message("Calling addtoInv from lcitem1. 4.");    
