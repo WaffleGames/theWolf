@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(haveSkull == 0 ){
+            <string>if(haveSkull == 0 and global.timeToFade==0){
     window_set_cursor(cr_handpoint);
 }else{
     window_set_cursor(cr_default);

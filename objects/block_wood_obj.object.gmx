@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_set_cursor(cr_handpoint);
+            <string>if(global.timeToFade == 0){
+    window_set_cursor(cr_handpoint);
+}
 </string>
           </argument>
         </arguments>

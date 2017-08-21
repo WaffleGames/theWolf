@@ -30,7 +30,10 @@ top = room_height;
 scrollText = "Created by Jillian and Nicole Lovas
 ###For Ludem Dare 39
 ###Art and programming by Jillian and Nicole Lovas
-###For the list of external resources##Please visit our Github repo:##https://github.com/WaffleGames/theWolf/blob/master/README.md";
+###Game made in Gamemaker Studio Pro
+###Art made with Photoshop, Krita, and photos from around our condo
+###For the list of external resources##Please visit our Github repo:##https://github.com/WaffleGames/theWolf/blob/master/README.md
+#####################################Thanks for Playing!";
 wolf = 0;
 </string>
           </argument>
@@ -83,7 +86,7 @@ wolf = 0;
           <argument>
             <kind>1</kind>
             <string>//if(string_height(scrollText)-(top/2)&lt;0){
-if(top &lt;= room_height/2){
+if(top &lt;= room_height/3){
     topw = room_height + 300;
     wolf = 1;
 }

@@ -30,11 +30,11 @@
 }else{
     image_index = 1;
 
-    if(global.roomBCol1 == 'skull_obj'){
+    if(global.roomBCol1 == 'skull_obj' and global.timeToFade ==0){
         instance_create(430, 580, skull_obj);
-    }else if(global.roomBCol1 == 'brick_obj'){
+    }else if(global.roomBCol1 == 'brick_obj' and global.timeToFade ==0){
         instance_create(430, 580, brick_obj);
-    }else if(global.roomBCol1 == 'block_wood_obj'){
+    }else if(global.roomBCol1 == 'block_wood_obj' and global.timeToFade ==0){
         instance_create(430, 580, block_wood_obj);
     }
     

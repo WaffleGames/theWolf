@@ -35,48 +35,14 @@ if(global.doneWallpaper ==1){
         }
     }
 }
-/*
-if(global.doneStool == 1){
-    if(room == firstRoom_D){
-        my_fluff = instance_find(fluff_obj, 1);    
-        
-        if(global.doneFluff == 0){
-            my_fluff.image_index = 0;
-            if(global.doneStool == 0){
-                my_fluff.visible = false;
-            }else{
-                my_fluff.visible = true;
-            }
-        
-        }else if(global.doneFluff == 1){
-            my_fluff.image_index = 1;
-            if(global.doneStool == 1){
-                my_fluff.visible = true;
-            }
-        }else if(global.doneFluff == 2){
-            my_fluff.visible = false;
-        }
-    my_fluff.image_speed = 0;
-    my_fluff.clicks = 0;
-    }
-}else{
-    //still unchopped stool - do not show fluff
-    if(room == firstRoom_D){
-        my_fluff = instance_find(fluff_obj, 1);
-        my_fluff.image_speed = 0;
-        my_fluff.image_index = 1;
-        my_fluff.clicks = 0;
-        my_fluff.visible = false;
-        }
-}
-*/
+
 if(global.cupDropped == 1 and room == facingPuzzle and global.haveCup != 1){
     the_cup = instance_find(cup_obj, 1);
     the_cup.image_index = 0;
     the_cup.image_speed = 0;
 }
 
-
+//code for when the puzzle is solved
 if(global.roomBCol1 !="" and global.roomACol2 != "" and global.hallwayCol3 != ""
 and global.placementFlagHallwayCol3 == 1 and global.placementFlagRoomACol2 ==1 
 and global.placementFlagRoomBCol1 == 1 and global.cupDropped == 0){
@@ -84,26 +50,9 @@ and global.placementFlagRoomBCol1 == 1 and global.cupDropped == 0){
     audio_play_sound(success, 10, false);
     showText("Something appeared in the hall.", 10,512,650);
     global.cupDropped = 1;
+    global.timeToFade = 1;
 }
 
-
-/*
-if(global.doneStool == 1){
-    if(global.doneFluff == 0){
-        image_index = 1;
-        global.doneFluff = 1;
-        if(global.doneStool == 1){
-            visible = true;
-        }
-    }else if(global.doneFluff == 1){
-        global.doneFluff = 2;
-        if(global.doneStool == 1){
-            //parent took over this code!
-        }
-        window_set_cursor(cr_default);
-    }
-}
-*/
 </string>
           </argument>
         </arguments>

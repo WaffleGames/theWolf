@@ -129,6 +129,9 @@ global.haveScrewdriver = 0;
 
 globalvar startBeginningMusic;
 global.startBeginningMusic = 0;
+
+globalvar timeToFade
+global.timeToFade = 0;
 </string>
           </argument>
         </arguments>

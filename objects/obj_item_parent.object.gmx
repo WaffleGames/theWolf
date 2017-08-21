@@ -53,7 +53,32 @@ in_inv = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>//fade and destroy the item
+if(global.timeToFade == 1){
+    if(image_alpha &lt;= 0){
+        with(block_wood_obj){
+            instance_destroy();
+        }
+        with(brick_obj){
+            instance_destroy();
+        }
+        with(skull_obj){
+            instance_destroy();
+        }
+    }
+    //reduce alpha = opacity
+    with(block_wood_obj){
+            image_alpha-=0.02;
+        }
+    with(brick_obj){
+            image_alpha-=0.02;
+        }
+        with(skull_obj){
+            image_alpha-=0.02;
+        }
+}
+
+/*
 if(global.hallwayCol1 != 0 and global.hallwayCol1 != "" and global.placementFlagHallwayCol1 == 0){
     if(room == facingPuzzle){
         //first col, blue one
