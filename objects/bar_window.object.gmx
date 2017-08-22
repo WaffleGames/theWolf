@@ -122,6 +122,7 @@ image_speed = 0;
     if(global.doneBars != 1){
         showText("If I could break the bars, I could escape...", 10,512,650);
     } else{
+        window_set_cursor(cr_default);
         room_goto(endingCredits);
     }
 }

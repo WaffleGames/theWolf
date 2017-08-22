@@ -1,17 +1,16 @@
 //pick up this item from ground
 
-show_debug_message("Called lcitem1. 1.");
+
 if(global.item==-1){
     //global.item = object_index;
     //instance_destroy();
     //draw the object into the inventory box approriate
-        show_debug_message("Adding to inventory 2.");
     if(id.object_index == desk_brick_obj){
         //if the item is the brick, switch it out
         instance_destroy();
         for(i=0;i<global.arrayLen;i++){
                     if(global.invArray[i].id.item == -1){
-                        show_debug_message("Moved item into inventory. 3333.");
+                        
                          new_brick = instance_create(100 + ((i*100)+100) + 32,42,brick_obj);
                          global.inventoryContents[i] = new_brick;
                          new_brick.in_inv = 1;
@@ -31,7 +30,7 @@ if(global.item==-1){
 
     for(i=0;i<global.arrayLen;i++){
                 if(global.invArray[i].id.item == -1){
-                    show_debug_message("Moved item into inventory. 3.");
+                    
                      action_move_to(100 + ((i*100)+100) + 32,42);
                      global.inventoryContents[i] = id;
                      //global.nameArray[i] = object_get_name(id.object_index);
@@ -41,7 +40,6 @@ if(global.item==-1){
    
     //detect which item it is and remove it from the scene, alter global variables
     my_object_name = object_get_name(id.object_index);
-    //show_debug_message(my_object_name);
     
     switch (my_object_name){
         case 'skull_obj':
@@ -75,7 +73,7 @@ if(global.item==-1){
             break;
     }
     
-    show_debug_message("Calling addtoInv from lcitem1. 4.");    
+        
     script_execute(addToInv);
     }
 }

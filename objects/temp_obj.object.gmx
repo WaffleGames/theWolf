@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>draw_self();
 visible=true;
-show_debug_message("I'm created!");
 </string>
           </argument>
         </arguments>
@@ -51,8 +50,6 @@ show_debug_message("I'm created!");
           <argument>
             <kind>1</kind>
             <string>/// pick up an object and put it into your inventory
-
-show_debug_message("You clicked me!");
 
 </string>
           </argument>

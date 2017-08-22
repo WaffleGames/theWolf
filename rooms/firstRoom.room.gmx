@@ -16,10 +16,8 @@
 script_execute(drawInv);
 
 
-if(global.startBeginningMusic == 0){    
-    audio_play_sound(ambience_all, 10, true);
-    global.startBeginningMusic = 1;
-}
+    
+audio_play_sound(ambience_all, 10, true);
 
 script_execute(resetGlow);</code>
   <enableViews>0</enableViews>

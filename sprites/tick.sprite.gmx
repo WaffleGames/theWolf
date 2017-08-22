@@ -21,5 +21,6 @@
   <height>10</height>
   <frames>
     <frame index="0">images\tick_0.png</frame>
+    <frame index="1">images\tick_1.png</frame>
   </frames>
 </sprite>
