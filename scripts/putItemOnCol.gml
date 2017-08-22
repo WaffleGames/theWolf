@@ -10,12 +10,25 @@ if(global.selected != -1){
         
     
     }else{
+ 
         //not a valid item to weigh down the column
-        show_debug_message("This item is not heavy enough, it won't budge.");
+        showText("This item is not heavy enough, it won't budge.", 10,512,650);
         return "";
     }
 }else{
-    //no item selected, so can't push it down
-    show_debug_message("It needs something heavy to push it down...");
-    return "";
+
+       //if puzzle is finished
+       show_debug_message(image_index);
+        if(global.cupDropped == 1 && image_index == 1){
+            showText("It won't budge.", 10,512,650);
+            return "";
+        } /*else if(global.cupDropped == 1 && image_index == 0){
+            showText("I'm done with this puzzle.", 10,512,650);
+            return "";
+        } */else{
+    
+        //no item selected, so can't push it down
+            showText("It needs something heavy to push it down...",10,512,650);
+            return "";
+        }
 }

@@ -90,7 +90,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(endingCredits);
+            <string>audio_stop_sound(wolfman);
+room_goto(endingCredits);
 </string>
           </argument>
         </arguments>

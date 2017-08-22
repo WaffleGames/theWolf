@@ -159,10 +159,10 @@ if(room == endingCredits){
             <string>if (mouse_check_button_pressed(mb_left) &amp;&amp; room == cutscene1){
    instance_create(0,0,transitionFade);
 }
-
+/*
 if (room == endingCredits &amp;&amp; !audio_is_playing(wolfman)){
    room_goto(mainMenu);
-}
+}*/
 </string>
           </argument>
         </arguments>
