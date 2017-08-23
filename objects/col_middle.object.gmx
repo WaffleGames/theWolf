@@ -113,7 +113,7 @@ possibleItem = "";
     possibleItem = "";
     possibleItem = script_execute(putItemOnCol);
     
-    if(possibleItem != ""){
+    if(possibleItem != "" &amp;&amp; possibleItem != "item"){
     
         global.hallwayCol2 = possibleItem;
     
@@ -136,8 +136,36 @@ possibleItem = "";
         image_index =1;
         audio_play_sound(button, 10, false);
         global.doneHallwayCol = 1;
+    }else{
+        show_debug_message(possibleItem);
+        if(possibleItem == "item" &amp;&amp; global.cupDropped == 0){
+            show_debug_message("not a heavy item");
+            showText("This item is not heavy enough, it won't budge.", 10,512,650);
+   }
+     else{
+//nothing in hand and not pressed down  
+        if(global.cupDropped == 1){
+        //puzzle is done
+            if( image_index == 0){
+            showText("I'm done with this puzzle.", 10,512,650);
+            }
+        } else{
+        //puzzle is not done
+        showText("It needs something heavy to push it down...",10,512,650);
+                }
+            }
+        }
+} else{ 
+//it is pressed down by an object
+    if(global.cupDropped == 1){
+    //puzzle is done
+            if( image_index == 1){
+            showText("It won't budge.", 10,512,650);
+            }   
     }
+    //otherwise, say nothing
 }
+
 </string>
           </argument>
         </arguments>
