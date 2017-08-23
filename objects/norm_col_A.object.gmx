@@ -137,7 +137,7 @@ possibleItem = "";
     audio_play_sound(button, 10, false);
     global.doneRoomACol = 1;
     } else{
-        show_debug_message(possibleItem);
+        
         if(possibleItem == "item" &amp;&amp; global.cupDropped == 0){
             showText("This item is not heavy enough, it won't budge.", 10,512,650);
     } else{

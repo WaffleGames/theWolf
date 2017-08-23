@@ -52,8 +52,7 @@ item = -1;
             <kind>1</kind>
             <string>//take an item from this box
 /*
-if(item!=-1){
-    show_debug_message("click inv");    
+if(item!=-1){   
     global.item = item; //current item selected
     //item = -1;
 }*/

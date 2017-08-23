@@ -30,22 +30,6 @@
         }
     }
 }
-/*
-if(audio_is_playing(wolfman)){
-    show_debug_message("The song is playing");
-}
-
-if(audio_sound_get_gain(wolfman)==0){
-//second time
-    show_debug_message("playing sound second time");
-    audio_stop_sound(wolfman);
-    audio_play_sound(wolfman, 2, false);
-} else{
-//first time
-    show_debug_message("playing sound");
-    audio_play_sound(wolfman, 1, false);
-    //sound_volume(wolfman, 1);
-}*/
 audio_play_sound(wolfman, 1, false);
 audio_sound_gain(wolfman, 1, 1);</code>
   <enableViews>0</enableViews>

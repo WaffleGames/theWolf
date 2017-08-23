@@ -138,9 +138,8 @@ possibleItem = "";
         global.doneHallwayYellowCol = 1;
         
     } else{
-        show_debug_message(possibleItem);
+        
         if(possibleItem == "item" &amp;&amp; global.cupDropped == 0){
-            show_debug_message("not a heavy item");
             showText("This item is not heavy enough, it won't budge.", 10,512,650);
 }    else{
 //nothing in hand and not pressed down  

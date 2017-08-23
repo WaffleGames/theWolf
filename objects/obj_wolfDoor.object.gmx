@@ -56,8 +56,6 @@ randomize(); //makes a new seed each playthrough
 alarm[7] = room_speed;
 
     if(between == 0){
-    show_debug_message("sound is:");
-    show_debug_message(sound);
        switch(sound){  
         case 0:
             audio_play_sound(clatter1,5,false);

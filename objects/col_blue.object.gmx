@@ -136,7 +136,7 @@ possibleItem = "";
         audio_play_sound(button, 10, false);
         global.doneHallwayBlueCol = 1;
     }else{
-        show_debug_message(possibleItem);
+        
         if(possibleItem == "item" &amp;&amp; global.cupDropped == 0){
             showText("This item is not heavy enough, it won't budge.", 10,512,650);
     } else{
@@ -144,13 +144,11 @@ possibleItem = "";
             if(global.cupDropped == 1){
             //puzzle is done
                 if( image_index == 0){
-                show_debug_message("im done with this puzzle");
                 showText("I'm done with this puzzle.", 10,512,650);
                 }
                 
             } else{
             //puzzle is not done
-            show_debug_message("dont say this 1");
             showText("It needs something heavy to push it down...",10,512,650);
                 }
             }
@@ -160,8 +158,7 @@ possibleItem = "";
     if(global.cupDropped == 1){
     //puzzle is done
             if( image_index == 1){
-            show_debug_message("dont say this 2");
-            showText("It won't budge.", 10,512,650);
+               showText("It won't budge.", 10,512,650);
             }   
     }
     //otherwise, say nothing

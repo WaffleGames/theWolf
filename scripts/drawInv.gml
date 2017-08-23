@@ -12,7 +12,7 @@ for(i=0;global.nameArray[i]!="";i++){
     tmp.in_inv = 1;
     //global.inventoryContents[i].x = 100 + ((i*100)+100) + 32;
     //global.inventoryContents[i].y = 32;
-    show_debug_message("In loop");
+
 }
 
-show_debug_message("Out of loop");*/
+*/

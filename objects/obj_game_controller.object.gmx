@@ -65,7 +65,7 @@
             <kind>1</kind>
             <string>//draw the held item in your hand
 if(global.item != -1){
-    //show_debug_message("holding!");
+    
     //draw_sprite(object_get_sprite(global.item),0,mouse_x,mouse_y);
 }
 </string>

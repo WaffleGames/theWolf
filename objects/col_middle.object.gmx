@@ -137,9 +137,8 @@ possibleItem = "";
         audio_play_sound(button, 10, false);
         global.doneHallwayCol = 1;
     }else{
-        show_debug_message(possibleItem);
+        
         if(possibleItem == "item" &amp;&amp; global.cupDropped == 0){
-            show_debug_message("not a heavy item");
             showText("This item is not heavy enough, it won't budge.", 10,512,650);
    }
      else{
