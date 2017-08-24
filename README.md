@@ -1,6 +1,10 @@
 # theWolf
 A game made for Ludum Dare 39 - a point and click horror game where you have been kidnapped by a wolf and you need to escape before he comes and gets you! This goes with the theme "running out of power".
 
+
+[![Playthrough/walkthrough](http://img.youtube.com/vi/D0mZvdfKTBo/0.jpg)](https://www.youtube.com/watch?v=D0mZvdfKTBo&feature=youtu.be)
+
+
 Resources:  
 
 How to make scrolling credits text - https://www.reddit.com/r/gamemaker/comments/zh320/request_how_to_make_scrolling_text/
@@ -13,7 +17,9 @@ Screwdriver - http://www.freepik.com/free-photo/construction-worker-builder-with
 Brick - http://www.freepik.com/free-vector/brick-texture-background_854395.htm#term=brick texture background&page=1&position=2
 
 
-Sound Effects & Music  
+Sound Effects & Music
+
+Guess Who - Clap For the Wolfman - snippet of the song was pitched, slowed, and made grainy.
 
 Door Creak - https://freesound.org/people/JarredGibb/sounds/219499/
 Paper Ripping - https://freesound.org/people/ryanharding95/sounds/272453/
