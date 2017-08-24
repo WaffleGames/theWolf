@@ -1,7 +1,7 @@
 # The Wolf
 A game made for Ludum Dare 39 - a point and click horror game where you have been kidnapped by a wolf and you need to escape before he comes and gets you! This goes with the theme "running out of power".
 
-Playthrough/Walkthrough
+Playthrough/Walkthrough  
 [![Playthrough/walkthrough](http://img.youtube.com/vi/D0mZvdfKTBo/0.jpg)](https://www.youtube.com/watch?v=D0mZvdfKTBo&feature=youtu.be)
 
 
