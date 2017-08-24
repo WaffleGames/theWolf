@@ -31,11 +31,11 @@
     image_index = 1;
     
     if(global.hallwayCol3 == 'skull_obj' and global.timeToFade ==0){
-        instance_create(620, 600, skull_obj);
+        instance_create(605, 600, skull_obj);
     }else if(global.hallwayCol3 == 'brick_obj' and global.timeToFade ==0){
-        instance_create(620, 600, brick_obj);
+        instance_create(605, 620, brick_obj);
     }else if(global.hallwayCol3 == 'block_wood_obj' and global.timeToFade ==0){
-        instance_create(620, 600, block_wood_obj);
+        instance_create(605, 600, block_wood_obj);
     }
     
 }
@@ -119,15 +119,15 @@ possibleItem = "";
     
         //please work
         if(global.hallwayCol3 == 'block_wood_obj'){
-            instance_create(620, 600, block_wood_obj);
+            instance_create(605, 600, block_wood_obj);
             global.placementFlagHallwayCol3 = 1;
             script_execute(removeItem);
         }else if(global.hallwayCol3 == 'skull_obj'){
-            instance_create(620, 600, skull_obj);
+            instance_create(605, 600, skull_obj);
             global.placementFlagHallwayCol3 = 1;
             script_execute(removeItem);
         }else if(global.hallwayCol3 == 'brick_obj'){
-            instance_create(620, 600, brick_obj);
+            instance_create(605, 620, brick_obj);
             global.placementFlagHallwayCol3 = 1;
             script_execute(removeItem);
         }

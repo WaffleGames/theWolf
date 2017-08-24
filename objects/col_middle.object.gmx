@@ -33,7 +33,7 @@
     if(global.hallwayCol2 == 'skull_obj'){
         instance_create(512, 600, skull_obj);
     }else if(global.hallwayCol2 == 'brick_obj'){
-        instance_create(512, 600, brick_obj);
+        instance_create(512, 620, brick_obj);
     }else if(global.hallwayCol2 == 'block_wood_obj'){
         instance_create(512, 600, block_wood_obj);
     }
@@ -127,7 +127,7 @@ possibleItem = "";
             global.placementFlagHallwayCol2 = 1;
             script_execute(removeItem);
         }else if(global.hallwayCol2 == 'brick_obj'){
-            instance_create(512, 600, brick_obj);
+            instance_create(512, 620, brick_obj);
             global.placementFlagHallwayCol2 = 1;
             script_execute(removeItem);
         }

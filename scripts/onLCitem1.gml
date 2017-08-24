@@ -2,6 +2,12 @@
 
 
 if(global.item==-1){
+    //if the object is fading, do not add it to inventory!
+    if(global.timeToFade == 1 and (id.object_index ==skull_obj or id.object_index==brick_obj or id.object_index==block_wood_obj) ){
+        return 0;
+    }
+
+        
     //global.item = object_index;
     //instance_destroy();
     //draw the object into the inventory box approriate

@@ -106,7 +106,7 @@
             <string>///put the cup underneath
 if(global.item !=-1){
     if(global.filledUpCup == 1){
-        show_debug_message("The cup can't hold anymore of that stuff");
+        //show_debug_message("The cup can't hold anymore of that stuff");
     }else if(object_get_name(global.inventoryContents[global.selected].object_index) == 'cup_obj'){
         
             my_cup = instance_create(440, 600, cup_obj);
